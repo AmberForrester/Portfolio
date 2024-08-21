@@ -6,7 +6,8 @@
 
 <img src='' alt=''>
 
-<p align='center'>Unveil the journey of a developer who turns complex problems into elegant solutions. This portfolio is more than just a showcase—it's a testament to the power of passion, precision, and relentless curiosity. Are you ready to be inspired?<br/>
+<p align='center'>Unveil the journey of a developer who turns complex problems into elegant solutions. This portfolio is more than just a showcase—it's a testament to the power of passion, precision, and relentless curiosity.
+<br /> Are you ready to be inspired? <br />
 
 <a href='https://github.com/AmberForrester/Portfolio'><strong>Source Code »</strong></a>
 <br />
