@@ -1,24 +1,122 @@
-# Portfolio
-Modern Developer Portfolio using React, Next.JS, TypeScript and Aceternity UI providing the most beautiful Tailwind CSS with Framer Motion components. 
+<a id="readme-top"></a>
+
+<h1 align='center'>2024 Portfolio :mortar_board:</h1> 
+
+<div align='center'>
+
+<img src='' alt=''>
+
+<p align='center'>Unveil the journey of a developer who turns complex problems into elegant solutions. This portfolio is more than just a showcase—it's a testament to the power of passion, precision, and relentless curiosity. Are you ready to be inspired?<br/>
+
+<a href='https://github.com/AmberForrester/Portfolio'><strong>Source Code »</strong></a>
+<br />
+<br />
+<a href='https://github.com/AmberForrester/Portfolio/issues/new?assignees=&labels=bug&projects=&template=bug-report-%F0%9F%90%9E.md'>Report Bug</a>
+.
+<a href='https://github.com/AmberForrester/Portfolio/issues/new?assignees=&labels=enhancement&projects=&template=feature-request-%F0%9F%9A%80.md'>Request Feature</a>
+</p>
+</div>
 
 
-https://nextjs.org/docs/getting-started/installation
 
-```
-npx create-next-app@latest
-```
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-this-project">About This Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-What is your project named? *name project here*
-Would you like to use TypeScript? No / *Yes
-Would you like to use ESLint? No / *Yes
-Would you like to use Tailwind CSS? No / *Yes
-Would you like your code inside a `src/` directory? *No / Yes
-Would you like to use App Router? (recommended) No / *Yes
-Would you like to customize the import alias (`@/*` by default)? *No / Yes
 
+
+# About This Project
+Modern Developer Portfolio using React, Next.JS, TypeScript and Aceternity UI providing the most beautiful Tailwind CSS with Framer Motion components.  
+<br />
+<br />
+A good understanding of React, Next.JS, TypeScript, Aceternity UI and Tailwind CSS would be beneficial to helping you create this project. However, it is always good practice regardless of your experience to refer to the Documentation available when developing ***any*** project.  
+
+_Please refer to the following Documentation for this specific project:_
+1. [React](https://react.dev/learn)
+2. [Next.JS](https://nextjs.org/docs/getting-started/installation)
+3. [TypeScript](https://www.typescriptlang.org/docs/)
+4. [Aceternity UI](https://ui.aceternity.com/)
+5. [TailwindCSS](https://v2.tailwindcss.com/docs/installation)
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
+## Getting Started
+Start a new Next.js app using `create-next-app`, this will set up everything automatically. 
+To create a project, run the following command in your terminal:
+> npx create-next-app@latest
+
+During the installation process you will see the following prompts within your terminal, for this particular project pay attention to the answers that are <ins>underlined</ins>. Those are the options you want to choose using the left/right arrows, and enter on your keyboard:
+> What is your project named? *name project here*
+> Would you like to use TypeScript? No / <ins>Yes</ins>
+> Would you like to use ESLint? No / <ins>Yes</ins>
+> Would you like to use Tailwind CSS? No / <ins>Yes</ins>
+> Would you like your code inside a `src/` directory? <ins>No</ins> / Yes
+> Would you like to use App Router? (recommended) No / <ins>Yes</ins>
+> Would you like to customize the import alias (`@/*` by default)? <ins>No</ins> / Yes
 
 Navigate to the project's root directory. Within the terminal using the following command:
 > cd .\nameofyourproject\
 
 Run the following command to start your application:
 > npm run dev
+
+
+
+## Prerequisites  
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
+## Contributing
+I have learned that contributions are the heart of what makes the open source community such an amazing place! We are constantly able to learn, grow, inspire eachother, and create incredible things. Any contributions you make are **greatly appreciated**, we are so lucky to be here together.
+
+If you have a suggestion that would make this project better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! I appreciate you!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
+## License
+Distributed under the MIT License. See `License.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## Acknowledgments
+Please take some time to check out the links below! I found value in each and every one of them, so my hope is that you will to!
+
+* _Special thanks to [JavaScript Mastery](https://youtu.be/FTH6Dn3AyIQ?si=ILnRQt5gixQkllFU) for the incredible tutorial video that brought my Portfolio to life!_
+* [Best README Template](https://github.com/othneildrew/Best-README-Template)
+* [Basic Syntax: Markdown Guide](https://www.markdownguide.org/basic-syntax/#reference-style-links)
+* [Formatting Syntax: GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#animal-bug)
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
