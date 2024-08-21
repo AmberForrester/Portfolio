@@ -1,9 +1,7 @@
 ---
 name: "Feature Request \U0001F680"
 about: Suggest an idea
-title: ''
 labels: enhancement
-assignees: ''
 
 ---
 
