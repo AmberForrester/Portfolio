@@ -67,13 +67,13 @@ To create a project, run the following command in your terminal:
 > npx create-next-app@latest
 
 During the installation process you will see the following prompts within your terminal, for this particular project pay attention to the answers that are <ins>underlined</ins>. Those are the options you want to choose using the left/right arrows, and enter on your keyboard:
-> What is your project named? *name project here*
-> Would you like to use TypeScript? No / <ins>Yes</ins>
-> Would you like to use ESLint? No / <ins>Yes</ins>
-> Would you like to use Tailwind CSS? No / <ins>Yes</ins>
-> Would you like your code inside a `src/` directory? <ins>No</ins> / Yes
-> Would you like to use App Router? (recommended) No / <ins>Yes</ins>
-> Would you like to customize the import alias (`@/*` by default)? <ins>No</ins> / Yes
+> What is your project named? *name project here* <br />
+> Would you like to use TypeScript? No / <ins>Yes</ins> <br />
+> Would you like to use ESLint? No / <ins>Yes</ins> <br />
+> Would you like to use Tailwind CSS? No / <ins>Yes</ins> <br />
+> Would you like your code inside a `src/` directory? <ins>No</ins> / Yes <br />
+> Would you like to use App Router? (recommended) No / <ins>Yes</ins> <br />
+> Would you like to customize the import alias (`@/*` by default)? <ins>No</ins> / Yes <br />
 
 Navigate to the project's root directory. Within the terminal using the following command:
 > cd .\nameofyourproject\
