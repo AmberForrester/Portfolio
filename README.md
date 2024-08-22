@@ -68,8 +68,7 @@ Start a new Next.js app using `create-next-app`, this will set up everything aut
 To create a project, run the following command in your terminal:
 > npx create-next-app@latest
 
-#### Installation
-
+### Installation
 During the installation process you will see the following prompts within your terminal, for this particular project pay attention to the answers that are <ins>underlined</ins>. Those are the options you want to choose using the left/right arrows, and enter on your keyboard:
 > What is your project named? *name project here* <br />
 > Would you like to use TypeScript? No / <ins>Yes</ins> <br />
