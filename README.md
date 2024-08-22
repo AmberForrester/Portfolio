@@ -6,9 +6,9 @@
 
 <img src='' alt=''>
 
-<p align='center'>Unveil the journey of a developer who turns complex problems into elegant solutions. This portfolio is more than just a showcase—it's a testament to the power of passion, precision, and relentless curiosity.
+<p align='center'>Unveil your journey of a Developer who turns complex problems into elegant solutions. This portfolio is more than just a showcase—it's a testament to the power of passion, precision, and relentless curiosity.
 <br />
-<br /> Are you ready to be inspired? <br />
+<br /> Are you ready to be inspired?
 
 <a href='https://github.com/AmberForrester/Portfolio'><strong>Source Code »</strong></a>
 <br />
@@ -47,7 +47,7 @@
 
 
 # About This Project
-Modern Developer Portfolio using React, Next.JS, TypeScript and Aceternity UI providing the most beautiful Tailwind CSS with Framer Motion components.  
+Build a modern Developer Portfolio using React, Next.JS, TypeScript and Aceternity UI providing the most beautiful Tailwind CSS with Framer Motion components.  
 <br />
 
 A good understanding of React, Next.JS, TypeScript, Aceternity UI and Tailwind CSS would be beneficial to helping you create this project. However, it is always good practice regardless of your experience to refer to the Documentation available when developing ***any*** project.  
