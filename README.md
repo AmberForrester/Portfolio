@@ -102,6 +102,13 @@ To ensure we kick off to a great start you can delete the following:
 @tailwind utilities;
 ```
 3. Clear all of the styles in the `globals.css` file. 
+4. The `layout.tsx` file is where the font being used is located, and where you will change the title and description of your project:
+```tsx
+export const metadata: Metadata = {
+  title: "CHANGE YOUR TITLE HERE",
+  description: "ADD A DESCRIPTION HERE",
+};
+```
 
 
 
