@@ -33,6 +33,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
+        <li><a href="#installation">Installation</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
     </li>
@@ -66,6 +67,8 @@ Start a new Next.js app using `create-next-app`, this will set up everything aut
 To create a project, run the following command in your terminal:
 > npx create-next-app@latest
 
+#### Installation
+
 During the installation process you will see the following prompts within your terminal, for this particular project pay attention to the answers that are <ins>underlined</ins>. Those are the options you want to choose using the left/right arrows, and enter on your keyboard:
 > What is your project named? *name project here* <br />
 > Would you like to use TypeScript? No / <ins>Yes</ins> <br />
@@ -81,9 +84,13 @@ Navigate to the project's root directory. Within the terminal using the followin
 Run the following command to start your application:
 > npm run dev
 
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 
-## Prerequisites  
+
+## Prerequisites 
+
+`package.json` file contents will go here.
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
