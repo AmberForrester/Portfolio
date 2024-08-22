@@ -34,6 +34,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#setting-up-the-environment">Setting up the Environment</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
     </li>
@@ -89,6 +90,11 @@ Run the following command to start your application:
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
+### Setting up the Environment 
+
+
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 
 ## Prerequisites 
@@ -110,7 +116,9 @@ If you have a suggestion that would make this project better, please fork the re
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Don't forget to give the project a :star:! I appreciate you!
+Don't forget to give the project a :star:! 
+
+I appreciate you!
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
@@ -124,7 +132,9 @@ Distributed under the MIT License. See `License.txt` for more information.
 
 
 ## Acknowledgments
-Please take some time to check out the links below! I found value in each and every one of them, so my hope is that you will to!
+Please take some time to check out the links below! 
+
+I found value in each and every one of them, so my hope is that you will to!
 
 * [JavaScript Mastery](https://youtu.be/FTH6Dn3AyIQ?si=ILnRQt5gixQkllFU) - _Special thanks for the incredible tutorial video that brought my Portfolio to life!_
 * [Best README Template](https://github.com/othneildrew/Best-README-Template)
