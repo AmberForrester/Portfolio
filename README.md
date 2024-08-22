@@ -27,7 +27,7 @@
     <li>
       <a href="#about-this-project">About This Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <!-- <li><a href="#built-with">Built With</a></li> -->
       </ul>
     </li>
     <li>
@@ -91,7 +91,10 @@ Run the following command to start your application:
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 ### Setting up the Environment 
-Starting any project with a clean slate is key for orga
+Starting any project with a clean slate is key for the organization and maintability of your code as it grows later on. 
+
+To ensure we kick off to a great start you can delete the following:
+> Within your `app` folder, **delete**`favicon.ico`.
 
 
 
