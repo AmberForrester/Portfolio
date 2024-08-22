@@ -95,6 +95,7 @@ Starting any project with a clean slate is key for the organization and maintabi
 
 To ensure we kick off to a great start you can delete the following:
 > Within your `app` folder, **delete** the `favicon.ico` file.
+
 > Within the `globals.css` file you will **keep** the import of the base, components and the utilities:  
 ```
 @tailwind base;
