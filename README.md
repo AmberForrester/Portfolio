@@ -48,9 +48,10 @@
 
 # About This Project
 Build a modern Developer Portfolio using React, Next.JS, TypeScript and Aceternity UI providing the most beautiful Tailwind CSS with Framer Motion components.  
-<br />
 
-A good understanding of React, Next.JS, TypeScript, Aceternity UI and Tailwind CSS would be beneficial to helping you create this project. However, it is always good practice regardless of your experience to refer to the Documentation available when developing ***any*** project.  
+A good understanding of React, Next.JS, TypeScript, Aceternity UI and Tailwind CSS would be beneficial to helping you create this project. 
+
+However, it is always good practice regardless of your experience to refer to the Documentation available when developing ***any*** project.  
 
 _Please refer to the following Documentation for this specific project:_
 1. [React](https://react.dev/learn)
