@@ -94,7 +94,13 @@ Run the following command to start your application:
 Starting any project with a clean slate is key for the organization and maintability of your code as it grows later on. 
 
 To ensure we kick off to a great start you can delete the following:
-> Within your `app` folder, **delete**`favicon.ico`.
+> Within your `app` folder, **delete** the `favicon.ico` file.
+> Within the `globals.css` file you will **keep** the import of the base, components and the utilities:  ```ruby
+                                     @tailwind base;
+                                     @tailwind components;
+                                     @tailwind utilities;
+                                     ```
+> Clear all of the styles in the `globals.css` file. 
 
 
 
