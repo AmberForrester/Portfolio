@@ -102,12 +102,24 @@ To ensure we kick off to a great start you can delete the following:
 @tailwind utilities;
 ```
 3. Clear all of the styles in the `globals.css` file. 
-4. The `layout.tsx` file is where the font being used is located, and where you will change the title and description of your project:
+4. The `layout.tsx` file is where the font being used is located, and where you will change the title and description of your project, on line 7:
 ```tsx
 export const metadata: Metadata = {
   title: "CHANGE YOUR TITLE HERE",
   description: "ADD A DESCRIPTION HERE",
 };
+```
+5. Go to your `page.tsx` file, and delete all of the code within the retun. Once you have done that you can now add in:
+```tsx
+export default function Home() {
+  return (
+    <main>
+      <div>
+        <h1>Hello, Portfolio</h1>
+      </div>
+    </main>
+  );
+}
 ```
 
 
