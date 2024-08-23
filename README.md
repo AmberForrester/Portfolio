@@ -36,6 +36,9 @@
         <li><a href="#installation">Installation</a></li>
         <li><a href="#setting-up-the-environment">Setting up the Environment</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
+          <ul>
+            <li><a href="#vscode-extensions">VSCode Extensions</a></li>
+          </ul>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
@@ -48,6 +51,7 @@
 
 
 # About This Project
+
 Build a modern Developer Portfolio using React, Next.JS, TypeScript and Aceternity UI providing the most beautiful Tailwind CSS with Framer Motion components.  
 
 A good understanding of React, Next.JS, TypeScript, Aceternity UI and Tailwind CSS would be beneficial to helping you create this project. 
@@ -66,11 +70,13 @@ _Please refer to the following Documentation for this specific project:_
 
 
 ## Getting Started
+
 Start a new Next.js app using `create-next-app`, this will set up everything automatically. 
 To create a project, run the following command in your terminal:
 > npx create-next-app@latest
 
 ### Installation
+
 During the installation process you will see the following prompts within your terminal, and for this particular project pay attention to the answers that are <ins>underlined</ins>.
 
 Those are the options you want to choose using the left/right arrows, and enter on your keyboard:
@@ -91,6 +97,7 @@ Run the following command to start your application:
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 ### Setting up the Environment 
+
 Starting any project with a clean slate is key for the organization and maintability of your code as it grows later on. 
 
 To ensure we kick off to a great start you can delete the following:
@@ -109,6 +116,7 @@ export const metadata: Metadata = {
   description: "ADD A DESCRIPTION HERE",
 };
 ```
+  > If done correctly, these changes will be visible in your browser's tab.
 5. Go to your `page.tsx` file, and delete all of the code within the retun. Once you have done that you can now add in:
 ```tsx
 export default function Home() {
@@ -121,10 +129,13 @@ export default function Home() {
   );
 }
 ```
+  > If done correctly, you should see the message output on your webpage.
+6. To ensure TailwindCSS is working, add some className's 
 
 
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
+
 
 
 ## Prerequisites 
@@ -135,7 +146,17 @@ export default function Home() {
 
 
 
+### VSCode Extensions
+
+1. TailwindCSS IntelliSense: Visualize which CSS properties are applied given a specific TailwindCSS className. 
+2. ES7+ React/Redux/React-Native snippets: _Provides shorthand prefixes,creates faster code snippets, and syntax._
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
 ## Contributing
+
 I have learned that contributions are the heart of what makes the open source community such an amazing place! We are constantly able to learn, grow, inspire eachother, and create incredible things. Any contributions you make are **greatly appreciated**, we are so lucky to be here together.
 
 If you have a suggestion that would make this project better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
@@ -155,6 +176,7 @@ I appreciate you!
 
 
 ## License
+
 Distributed under the MIT License. See `License.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -162,6 +184,7 @@ Distributed under the MIT License. See `License.txt` for more information.
 
 
 ## Acknowledgments
+
 Please take some time to check out the links below! 
 
 I found value in each and every one of them, so my hope is that you will to!
