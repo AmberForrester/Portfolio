@@ -116,7 +116,8 @@ export const metadata: Metadata = {
   description: "ADD A DESCRIPTION HERE",
 };
 ```
-  > - If done correctly, these changes will be visible in your browser's tab.
+> [!IMPORTANT]
+> If done correctly, these changes will be visible in your browser's tab.
 5. Go to your `page.tsx` file, and delete all of the code within the retun. Once you have done that you can now add in:
 ```tsx
 export default function Home() {
@@ -129,7 +130,8 @@ export default function Home() {
   );
 }
 ```
-  > - If done correctly, you should see the message output on your webpage.
+> [!IMPORTANT]
+> If done correctly, you should see the message output on your webpage.
 6. To ensure TailwindCSS is working, add some className's 
 
 
