@@ -118,7 +118,7 @@ export const metadata: Metadata = {
 ```
 > [!IMPORTANT]
 > If done correctly, these changes will be visible in your browser's tab.
-5. Go to your `page.tsx` file, and delete all of the code within the retun. Once you have done that you can now add in:
+5. Go to your `page.tsx` file, and delete all of the code within the return. Once you have done that you can now add in:
 ```tsx
 export default function Home() {
   return (
@@ -132,7 +132,28 @@ export default function Home() {
 ```
 > [!IMPORTANT]
 > If done correctly, you should see the message output on your webpage.
-6. To ensure TailwindCSS is working, add some className's 
+6. To ensure TailwindCSS is working, add some className's with TailwindCSS properties watching the rendered output on your webpage.
+```tsx
+export default function Home() {
+  return (
+    <main className='relative bg-black'>
+      <div>
+```
+7. Adding custom colours to your `tailwind.config.ts` file will allow you to further personalize your portfolio project. <br>
+Extending your existing theme by first removing the existing backgroundImage, then adding colors of your preference with a default, and creating different variants:
+```ts
+theme: {
+    extend: {
+      colors: {
+        black: {
+          DEFAULT: '#000',
+          100: '#000319'
+        },
+      },
+    },
+  },
+```
+
 
 
 
