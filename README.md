@@ -58,7 +58,7 @@ A good understanding of React, Next.JS, TypeScript, Aceternity UI and Tailwind C
 
 However, it is always good practice regardless of your experience to refer to the Documentation available when developing ***any*** project.  
 
-_Please refer to the following Documentation for this specific project:_
+*Please refer to the following Documentation for this specific project:*
 1. [React](https://react.dev/learn)
 2. [Next.JS](https://nextjs.org/docs/getting-started/installation)
 3. [TypeScript](https://www.typescriptlang.org/docs/)
@@ -146,10 +146,10 @@ export default function Home() {
 
 
 
-### VSCode Extensions
+#### VSCode Extensions
 
-1. TailwindCSS IntelliSense: Visualize which CSS properties are applied given a specific TailwindCSS className. 
-2. ES7+ React/Redux/React-Native snippets: _Provides shorthand prefixes,creates faster code snippets, and syntax._
+1. TailwindCSS IntelliSense - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
+2. ES7+ React/Redux/React-Native snippets - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
@@ -167,7 +167,7 @@ If you have a suggestion that would make this project better, please fork the re
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Don't forget to give the project a :star:! 
+Please, don't forget to give the project a :star:! 
 
 I appreciate you!
 
@@ -189,7 +189,7 @@ Please take some time to check out the links below!
 
 I found value in each and every one of them, so my hope is that you will to!
 
-* [JavaScript Mastery](https://youtu.be/FTH6Dn3AyIQ?si=ILnRQt5gixQkllFU) - _Special thanks for the incredible tutorial video that brought my Portfolio to life!_
+* [JavaScript Mastery](https://youtu.be/FTH6Dn3AyIQ?si=ILnRQt5gixQkllFU) - *Special thanks for the incredible tutorial video that brought my Portfolio to life!*
 * [Best README Template](https://github.com/othneildrew/Best-README-Template)
 * [Basic Syntax: Markdown Guide](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 * [Formatting Syntax: GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
