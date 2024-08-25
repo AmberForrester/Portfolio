@@ -1,3 +1,4 @@
+import MagicButton from './ui/MagicButton';
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 
@@ -34,6 +35,18 @@ const Hero = () => {
                 <TextGenerateEffect
                 className='text-center text-[40px] md:text-5xl lg:text-6xl'
                 words='Transforming Concepts into Seamless Experiences'/>
+
+                <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
+                    Hello I&apos;m Amber, a Full Stack Developer based in Canada.
+                </p>
+
+                <a href='#about'>
+                    <MagicButton
+                    title='Show My Work'
+                    icon=''
+                    position='right'
+                    />
+                </a>
             </div>
         </div>
     </div>

@@ -42,6 +42,7 @@
             <li><a href="#ui-grid-background">UI Grid Background</a></li>
             <li><a href="#dark-mode-in-next.js">Dark Mode in Next.js</a></li>
             <li><a href="#text-generate-effect">Text Generate Effect</a></li>
+            <li><a href="#add-magic-button">Add Magic Button</a></li>
           </ul>
       </ul>
     </li>
@@ -593,15 +594,24 @@ export const TextGenerateEffect = ({
 ```
 </details>
 
-Within your `Hero.tsx` file, import the <TextGenerateEffect> following the h2 tag and add props to it:
+Within your `Hero.tsx` file, import the <TextGenerateEffect> following the h2 tag and add props to it to give it style plus render your text:
 ```tsx
   </h2>
 
     <TextGenerateEffect
-      className=''
+      className='text-center text-[40px] md:text-5xl lg:text-6xl'
       words='Transforming Concepts into Seamless Experiences'/>
 </div>
 ```
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
+<h4 align='center'>Add Magic Button</h4> 
+
+
+
 
 
 
