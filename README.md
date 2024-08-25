@@ -448,9 +448,11 @@ npm install mini-svg-data-uri
 ```
 npm install tailwindcss-animate
 ```
-1. Within the root project folder add a `src` folder.<br />
-2. Next add a folder named `types` and create a custom type declaration file within that folder called `tailwindcss.d.ts`.<br /> 
-3. Adding the following code to tell TypeScript how to handle this module:
+You will need to create a custom type declaration file to tell TypeScript how to handle this module:
+> import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
+1. Within the root project folder add a `src` folder.
+2. Next add a folder named `types` and create a custom type declaration file within that folder called `tailwindcss.d.ts`.
+3. Adding the following code:
 ```ts
 declare module 'tailwindcss/lib/util/flattenColorPalette' {
   export default function flattenColorPalette(colors: any): Record<string, string>;
