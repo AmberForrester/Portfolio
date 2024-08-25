@@ -154,7 +154,6 @@ theme: {
 ```
 > [!TIP]
 > Add custom colours of your choice, plus a default and create a variant colour to further personalize your portfolio project. 
-8. 
 
 
 
@@ -163,6 +162,12 @@ theme: {
 
 
 ## Prerequisites 
+
+1. Creating a spotlight feature within the `Hero.tsx` file using [Aceternity UI](https://ui.aceternity.com/). Once on the website use CTRL + K to bring up the search functionality, then type: spotlight <br />
+
+Open a *second* terminal to install dependencies and copy code:
+> npm i framer-motion clsx tailwind-merge
+
 
 `package.json` file contents will go here.
 
