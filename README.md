@@ -170,19 +170,17 @@ theme: {
 
 ## Prerequisites 
 
-<h5 align='center'>Main Page Spotlight Feature2024 Portfolio</h5> 
+<h5 align='center'>Main Page Spotlight Feature</h5> 
 
 
-Create a spotlight feature on the main page within the `Hero.tsx` file using [Aceternity UI](https://ui.aceternity.com/).<br /> 
-Once on the website use CTRL + K to bring up the search functionality, then type: spotlight and follow installation instructions: <br />
+Create a spotlight feature on the main page within the `Hero.tsx` file using [Aceternity UI](https://ui.aceternity.com/). Once on the website use CTRL + K to bring up the search functionality, then type: spotlight and follow installation instructions: <br />
 
 Open a ***second*** terminal to install dependencies and copy code:
 ```
 npm i framer-motion clsx tailwind-merge
 ```
 
-Create a folder within the root folder named `lib`.<br />
-Within that folder a new file named `utils.ts`, then add the *Add util file* code as a helper function to make everything work with TailwindCSS:
+Create a folder within the root folder named `lib`. Within that folder create a new file named `utils.ts`, then add the *"Add util file"* code as a helper function to make everything work with TailwindCSS:
 ```ts
 import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -192,8 +190,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 ```
 
-Create a folder within the `components` folder called `ui` - this will hold all the Acerternity UI components. <br />
-Within the `ui` folder create the `Spotlight.tsx` file and paste the source code from the installation instructions here. 
+Create a folder within the `components` folder called `ui` - <ins>this will hold all the Acerternity UI components.</ins> <br />
+Within the `ui` folder create the `Spotlight.tsx` file and paste the source code from the installation instructions. 
 
 Add the `Spotlight.tsx` file affect to the `Hero.tsx` component by importing and adding className's with styling: 
 ```tsx
@@ -217,7 +215,7 @@ const Hero = () => {
         </div>
 ```
 
-Adjust your `tailwind.config.ts` file using this code snippet:
+Instead of needing to edit your `tailwind.config.ts` file repeatedly to use Aceternity UI components, use the code snippet below:
 <details>
 <summary><code>tailwind.config.ts</code></summary>
 
@@ -430,7 +428,8 @@ export default config;
 
 </details>
 
-Your `tailwind.config.ts` will show errors for the dependencies not installed yet. Within your ***second*** terminal type:
+> [!NOTE]
+> There will be errors related to your imports for the dependencies not installed yet. To solve the errors within your ***second*** terminal use the following commands:
 ```
 npm install mini-svg-data-uri
 ```
