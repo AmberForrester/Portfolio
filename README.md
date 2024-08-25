@@ -448,6 +448,12 @@ npm install mini-svg-data-uri
 ```
 npm install tailwindcss-animate
 ```
+Add a `src` folder to your root project folder. Then add another folder named `types`, and create a custom type declaration file within that folder called `tailwindcss.d.ts`. Add the following code to tell TypeScript how to handle this module:
+```ts
+declare module 'tailwindcss/lib/util/flattenColorPalette' {
+  export default function flattenColorPalette(colors: any): Record<string, string>;
+}
+```
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
@@ -465,7 +471,7 @@ Copy and paste the code as a second div in your `Hero.tsx` file, directly below 
   </div>
 ```
 > [!TIP]
-> Use a theme provider to switch the UI background grid to dark mode.
+> Use a theme provider to switch the UI Grid Background to dark mode.
 
 <h5 align='center'>Dark Mode in Next.js</h5>
 
@@ -477,7 +483,16 @@ npm i next-themes
 
 Google 'next-themes' and find the [Next.js - shadcn/ui](https://ui.shadcn.com/docs/dark-mode/next), and follow the setup to add dark mode.
 
+
+
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
+
+
+
+
 
 
 
