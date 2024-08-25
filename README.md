@@ -170,8 +170,16 @@ theme: {
 
 ## Prerequisites 
 
-<h5 align='center'>Main Page Spotlight Feature</h5> 
+<h4 align='center'>VSCode Extensions</h4> 
 
+1. <ins>TailwindCSS IntelliSense</ins> - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
+2. <ins>ES7+ React/Redux/React-Native snippets</ins> - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
+<h5 align='center'>Main Page Spotlight Feature</h5> 
 
 Create a spotlight feature on the main page within the `Hero.tsx` file using [Aceternity UI](https://ui.aceternity.com/). Once on the website use CTRL + K to bring up the search functionality, then type: spotlight and follow installation instructions: <br />
 
@@ -556,15 +564,6 @@ For easier styling with personalization, adjust your `globals.css` file using th
 
 
 `package.json` file contents will go here.
-
-<p align="right">(<a href="#readme-top">top of page</a>)</p>
-
-
-
-#### VSCode Extensions
-
-1. <ins>TailwindCSS IntelliSense</ins> - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
-2. <ins>ES7+ React/Redux/React-Native snippets</ins> - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
