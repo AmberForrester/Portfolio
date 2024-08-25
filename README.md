@@ -43,6 +43,7 @@
             <li><a href="#dark-mode-in-next.js">Dark Mode in Next.js</a></li>
             <li><a href="#text-generate-effect">Text Generate Effect</a></li>
             <li><a href="#add-magic-button">Add Magic Button</a></li>
+            <li><a href="#react-icons">React Icons</a></li>
           </ul>
       </ul>
     </li>
@@ -662,7 +663,22 @@ const MagicButton = ({title, icon, position, handleClick, otherClasses}: {
 ```
 The title is already being passed as you can see a button after the text on your main page with the title 'Border Magic'. 
 
-On line 10, located in the `MagicButton.tsx` file replace Border Magic with {title} and you can now see your personalized title from line 45 in your `Hero.tsx` file on your webpage. 
+On line 10, located in the `MagicButton.tsx` file replace Border Magic with {title} and you can now see your personalized title from line 45 in your `Hero.tsx` file on your webpage.
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
+<h4 align='center'>React Icons</h4> 
+
+Add an Icon to your button by using a PNG or SVG file, for this project an icon was used from [react-icons](https://react-icons.github.io/react-icons/).
+
+Install the ability to use those icons by installing [React Icons](https://www.npmjs.com/package/react-icons) within your ***second*** terminal by typing:
+```
+npm i react-icons
+```
+After that you can use it by simply important an icon. 
+
 
 
 
