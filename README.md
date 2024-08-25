@@ -467,10 +467,6 @@ Copy and paste the code as a second div in your `Hero.tsx` file, directly below 
 > [!TIP]
 > Use a theme provider to switch the UI background grid to dark mode.
 
-<p align="right">(<a href="#readme-top">top of page</a>)</p>
-
-
-
 <h5 align='center'>Dark Mode in Next.js</h5>
 
 Visit [npmjs](https://www.npmjs.com/) and search *"next-themes"* by paco.
