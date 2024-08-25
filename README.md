@@ -521,7 +521,8 @@ Import the { ThemeProvider } from "./provider"; at the top.
 
 Create a file named `TextGenerateEffect.tsx` within the `ui` components folder.
 
-Search the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K for *"Text Generate Effect"*.<br />
+Search the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K for *"Text Generate Effect"*.
+
 Copy and paste the source code snippet inside your `TextGenerateEffect.tsx` file:
 <details>
 <summary><code>TextGenerateEffect.tsx</code></summary>
