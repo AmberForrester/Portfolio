@@ -37,12 +37,12 @@ const Hero = () => {
                 words='Transforming Concepts into Seamless Experiences'/>
 
                 <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                    Hello I&apos;m Amber, a Full Stack Developer based in Canada.
+                    Hello I&apos;m Amber, a retired Nurse turned Full Stack Developer based in Canada.
                 </p>
 
                 <a href='#about'>
                     <MagicButton
-                    title='Show My Work'
+                    title='Discover My Skills'
                     icon=''
                     position='right'
                     />

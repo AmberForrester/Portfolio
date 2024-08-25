@@ -610,6 +610,60 @@ Within your `Hero.tsx` file, import the <TextGenerateEffect> following the h2 ta
 
 <h4 align='center'>Add Magic Button</h4> 
 
+Search the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K for *"buttons"*.
+
+Choose the *"Tailwind CSS buttons"* option, and scroll down to your preferred button type. Click the button to copy return value of the button.
+
+> For this project, the *'Border Magic'* button was selected.
+
+Within the `ui` folder, create a new file named `MagicButton.tsx`.
+
+Using the rafce import, create a new React Arrow Function Component Export and paste the button within the return:
+```tsx
+import { title } from 'process'
+
+const MagicButton = () => {
+  return (
+    <button className='relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10'>
+        <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]' />
+        <span className={'inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl ${otherClasses}'}>
+            Border Magic
+        </span>
+    </button>
+  );
+};
+
+export default MagicButton;
+```
+To visualize your button, place the button under the p tag within your `Hero.tsx` file, and wrap it with an ahref link:
+```tsx
+</p>
+  <a href='#about'>
+    <MagicButton
+      title='Show my work'
+      icon=''
+      position='right'
+      />
+  </a>
+```
+Make the Magic Button more dynamic by accepting props like title, icon, position, an optional handleClick, and optional otherClasses within the `MagicButton.tsx` file.
+
+Since we are using TypeScript for this project, we define those props:
+  - Title of a type string
+  - Icon of a type React.ReactNode
+  - Position of a type string
+  - handleClick made optional of a type function that does not return anything, so it is void
+  - otherClasses made optional of a type string if used
+```tsx
+const MagicButton = ({title, icon, position, handleClick, otherClasses}: {
+    title: string; icon: React.ReactNode, position: string; handleClick?: () => void; otherClasses?: string;
+}) => {
+  return (
+```
+The title is already being passed as you can see a button after the text on your main page with the title 'Border Magic'. 
+
+On line 10, located in the `MagicButton.tsx` file replace Border Magic with {title} and you can now see your personalized title from line 45 in your `Hero.tsx` file on your webpage. 
+
 
 
 
