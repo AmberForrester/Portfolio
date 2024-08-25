@@ -695,6 +695,8 @@ After that you can use it by simply importng an icon starting on line 44 within 
     position='right'/>
 </a>
 ```
+Making sure the import has reflected on the top of your `Hero.tsx` file:
+> import { FaLocationArrow } from 'react-icons/fa6';
 
 
 
