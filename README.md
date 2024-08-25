@@ -139,7 +139,7 @@ export default function Home() {
     <main className='relative bg-black'>
       <div>
 ```
-7. Extend the theme(consistent styling) adding your preferred colours by first removing the existing backgroundImage code within your `tailwind.config.ts` file:
+7. Remove the existing backgroundImage code within your `tailwind.config.ts` file and extend the theme by adding your preferred colours:
 ```ts
 theme: {
     extend: {
@@ -153,7 +153,7 @@ theme: {
   },
 ```
 > [!TIP]
-> Adding custom colours of your preference with a default, and creating a variant colour will allow you to further personalize your portfolio project. 
+> Add custom colours of your choice, plus a default and create a variant colour to further personalize your portfolio project. 
 
 
 
