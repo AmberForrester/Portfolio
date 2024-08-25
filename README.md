@@ -170,7 +170,8 @@ theme: {
 
 ## Prerequisites 
 
-#### Main Page Spotlight Feature - 
+<h5 align='center'>Main Page Spotlight Feature2024 Portfolio</h5> 
+
 
 Create a spotlight feature on the main page within the `Hero.tsx` file using [Aceternity UI](https://ui.aceternity.com/).<br /> 
 Once on the website use CTRL + K to bring up the search functionality, then type: spotlight and follow installation instructions: <br />
