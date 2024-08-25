@@ -154,6 +154,7 @@ theme: {
 ```
 > [!TIP]
 > Add custom colours of your choice, plus a default and create a variant colour to further personalize your portfolio project. 
+8. 
 
 
 
@@ -171,8 +172,8 @@ theme: {
 
 #### VSCode Extensions
 
-1. TailwindCSS IntelliSense - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
-2. ES7+ React/Redux/React-Native snippets - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
+1. <ins>TailwindCSS IntelliSense</ins> - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
+2. <ins>ES7+ React/Redux/React-Native snippets</ins> - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
