@@ -231,12 +231,11 @@ Instead of needing to edit your `tailwind.config.ts` file repeatedly to use Acet
 ```ts
 import type { Config } from "tailwindcss";
 
-const svgToDataUri = require("mini-svg-data-uri");
+import svgToDataUri from "mini-svg-data-uri";
 
-const colors = require("tailwindcss/colors");
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+import colors from "tailwindcss/colors";
+
+import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 
 const config = {
   darkMode: ["class"],
@@ -430,11 +429,10 @@ function addVariablesForColors({ addBase, theme }: any) {
   addBase({
     ":root": newVars,
   });
-}
+};
 
 export default config;
 ```
-
 </details>
 
 > [!NOTE]
@@ -449,6 +447,31 @@ npm install tailwindcss-animate
 ```
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+UI Grid Component 
+
+Using the *"Grid and Dot Backgrounds"* by searching on the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K.<br />
+Copy and paste the code as a second div in your `Hero.tsx` file, directly below the UI Spotlight div:
+```tsx
+{/**
+       *  UI: grid
+       * Link: https://ui.aceternity.com/components/grid-and-dot-backgrounds
+       *  change bg color to bg-black-100 and reduce grid color from
+       *  0.2 to 0.03
+       */}
+        <div
+        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+       absolute top-0 left-0 flex items-center justify-center">
+        {/* Radial gradient for the container to give a faded look */}
+        <div
+          // change the bg to bg-black-100, so it matches the bg color and will blend in.
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+        />
+      </div>
+```
+
+
 
 
 
