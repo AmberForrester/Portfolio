@@ -39,6 +39,8 @@
           <ul>
             <li><a href="#vscode-extensions">VSCode Extensions</a></li>
             <li><a href="#main-page-spotlight-styling">Main Page Spotlight Styling</a></li>
+            <li><a href="#ui-grid-background">UI Grid Background</a></li>
+            <li><a href="#dark-mode-in-next.js">Dark Mode in Next.js</a></li>
           </ul>
       </ul>
     </li>
@@ -65,6 +67,7 @@ However, it is always good practice regardless of your experience to refer to th
 3. [TypeScript](https://www.typescriptlang.org/docs/)
 4. [Aceternity UI](https://ui.aceternity.com/)
 5. [TailwindCSS](https://v2.tailwindcss.com/docs/installation)
+6. [npmjs](https://www.npmjs.com/)
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
@@ -448,28 +451,40 @@ npm install tailwindcss-animate
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
-UI Grid Component 
+<h5 align='center'>UI Grid Background</h5> 
 
 Using the *"Grid and Dot Backgrounds"* by searching on the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K.<br />
 Copy and paste the code as a second div in your `Hero.tsx` file, directly below the UI Spotlight div:
 ```tsx
 {/**
-       *  UI: grid
-       * Link: https://ui.aceternity.com/components/grid-and-dot-backgrounds
-       *  change bg color to bg-black-100 and reduce grid color from
-       *  0.2 to 0.03
-       */}
-        <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
-       absolute top-0 left-0 flex items-center justify-center">
-        {/* Radial gradient for the container to give a faded look */}
-        <div
-          // change the bg to bg-black-100, so it matches the bg color and will blend in.
-          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
-        />
-      </div>
+  *  UI: grid
+  * Link: https://ui.aceternity.com/components/grid-and-dot-backgrounds*/}
+  <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.3] bg-grid-black-100/[0.2] relative flex items-center justify-center">
+    <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
+     bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
+  </div>
 ```
+> [!TIP]
+> Use a theme provider to switch the UI background grid to dark mode.
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
+<h5 align='center'>Dark Mode in Next.js</h5>
+
+Visit [npmjs](https://www.npmjs.com/) and search *"next-themes"* by paco.
+Install it using the ***second*** terminal:
+```
+npm i next-themes
+```
+
+Google 'next-themes' and find the [Next.js - shadcn/ui](https://ui.shadcn.com/docs/dark-mode/next), and follow the setup to add dark mode.
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
+
 
 
 
