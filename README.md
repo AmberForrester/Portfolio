@@ -41,6 +41,7 @@
             <li><a href="#main-page-spotlight-styling">Main Page Spotlight Styling</a></li>
             <li><a href="#ui-grid-background">UI Grid Background</a></li>
             <li><a href="#dark-mode-in-next.js">Dark Mode in Next.js</a></li>
+            <li><a href="#text-generate-effect">Text Generate Effect</a></li>
           </ul>
       </ul>
     </li>
@@ -218,16 +219,16 @@ const Hero = () => {
        *  Link: https://ui.aceternity.com/components/spotlight
        */}
        
-        <div>
-            <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white'/>
+      <div>
+        <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white'/>
 
-            <Spotlight className='top-10 left-full h-[80-vh] w-[50vw]' fill='purple'/>
+        <Spotlight className='h-[80vh] w-[50vw] top-10 left-full' fill='purple'/>
 
-            <Spotlight className='top-28 left-80 h-[80-vh] w-[50vw]' fill='blue'/>
-        </div>
+        <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill='blue'/>
+      </div>
 ```
 
-Instead of needing to edit your `tailwind.config.ts` file repeatedly to use Aceternity UI components, use the code snippet below:
+Instead of needing to override your `tailwind.config.ts` file repeatedly every time you choose a new Aceternity UI component, use the code snippet below:
 <details>
 <summary><code>tailwind.config.ts</code></summary>
 
@@ -463,7 +464,7 @@ declare module 'tailwindcss/lib/util/flattenColorPalette' {
 
 <h4 align='center'>UI Grid Background</h4> 
 
-Using the *"Grid and Dot Backgrounds"* by searching on the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K.<br />
+Search the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K for *"Grid and Dot Backgrounds"*.<br />
 Copy and paste the code as a second div in your `Hero.tsx` file, directly below the UI Spotlight div:
 ```tsx
 {/**
@@ -501,7 +502,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange>{children}
         </ThemeProvider>
@@ -512,13 +513,98 @@ export default function RootLayout({
 ```
 Import the { ThemeProvider } from "./provider"; at the top. 
 
-
-
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 
 
+<h4 align='center'>Text Generate Effect</h4> 
 
+Create a file named `TextGenerateEffect.tsx` within the `ui` components folder.
+
+Search the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K for *"Text Generate Effect"*.<br />
+Copy and paste the source code snippet inside your `TextGenerateEffect.tsx` file:
+<details>
+<summary><code>TextGenerateEffect.tsx</code></summary>
+
+```tsx
+"use client";
+import { useEffect, useCallback } from "react";
+import { motion, stagger, useAnimate } from "framer-motion";
+import { cn } from "@/lib/utils";
+
+export const TextGenerateEffect = ({
+  words,
+  className,
+}: {
+  words: string;
+  className?: string;
+}) => {
+  const [scope, animate] = useAnimate();
+  let wordsArray = words.split(" ");
+
+  const animateWords = useCallback(() => {
+    console.log(wordsArray);
+    animate(
+      "span",
+      {
+        opacity: 1,
+      },
+      {
+        duration: 2,
+        delay: stagger(0.2),
+      }
+    );
+  }, [animate, wordsArray]);
+
+  useEffect(() => {
+    animateWords();
+  }, [scope, animateWords]);
+
+  const renderWords = () => {
+    return (
+      <motion.div ref={scope}>
+        {wordsArray.map((word, idx) => {
+          return (
+            <motion.span
+              key={word + idx}
+              className={` ${
+                idx > 3 ? "text-purple" : "dark:text-white text-black"
+              } opacity-0`}
+            >
+              {word}{" "}
+            </motion.span>
+          );
+        })}
+      </motion.div>
+    );
+  };
+
+  return (
+    <div className={cn("font-bold", className)}>
+      <div className="my-4">
+        <div className="dark:text-white text-black leading-snug tracking-wide">
+          {renderWords()}
+        </div>
+      </div>
+    </div>
+  );
+};
+```
+</details>
+
+Within your `Hero.tsx` file, import the <TextGenerateEffect> following the h2 tag and add props to it:
+```tsx
+  </h2>
+
+    <TextGenerateEffect
+      className=''
+      words='Transforming Concepts into Seamless Experiences'/>
+</div>
+```
+
+
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 
 
