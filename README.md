@@ -38,6 +38,7 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
           <ul>
             <li><a href="#vscode-extensions">VSCode Extensions</a></li>
+            <li><a href="#main-page-spotlight-styling">Main Page Spotlight Styling</a></li>
           </ul>
       </ul>
     </li>
@@ -170,7 +171,7 @@ theme: {
 
 ## Prerequisites 
 
-<h4 align='center'>VSCode Extensions</h4> 
+<h5 align='center'>VSCode Extensions</h5> 
 
 1. <ins>TailwindCSS IntelliSense</ins> - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
 2. <ins>ES7+ React/Redux/React-Native snippets</ins> - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
@@ -179,9 +180,9 @@ theme: {
 
 
 
-<h5 align='center'>Main Page Spotlight Feature</h5> 
+<h5 align='center'>Main Page Spotlight Styling</h5> 
 
-Create a spotlight feature on the main page within the `Hero.tsx` file using [Aceternity UI](https://ui.aceternity.com/). Once on the website use CTRL + K to bring up the search functionality, then type: spotlight and follow installation instructions: <br />
+Create a spotlight style on the main page within the `Hero.tsx` file using [Aceternity UI](https://ui.aceternity.com/). Once on the website use CTRL + K to bring up the search functionality, then type: spotlight and follow installation instructions: <br />
 
 Open a ***second*** terminal to install dependencies and copy code:
 ```
@@ -446,6 +447,8 @@ npm install mini-svg-data-uri
 ```
 npm install tailwindcss-animate
 ```
+
+<p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 
 
