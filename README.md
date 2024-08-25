@@ -174,7 +174,7 @@ theme: {
 
 ## Prerequisites 
 
-<h5 align='center'>VSCode Extensions</h5> 
+<h4 align='center'>VSCode Extensions</h4> 
 
 1. <ins>TailwindCSS IntelliSense</ins> - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
 2. <ins>ES7+ React/Redux/React-Native snippets</ins> - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
@@ -183,7 +183,7 @@ theme: {
 
 
 
-<h5 align='center'>Main Page Spotlight Styling</h5> 
+<h4 align='center'>Main Page Spotlight Styling</h4> 
 
 Create a spotlight style on the main page within the `Hero.tsx` file using [Aceternity UI](https://ui.aceternity.com/). Once on the website use CTRL + K to bring up the search functionality, then type: spotlight and follow installation instructions: <br />
 
@@ -458,7 +458,7 @@ declare module 'tailwindcss/lib/util/flattenColorPalette' {
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
-<h5 align='center'>UI Grid Background</h5> 
+<h4 align='center'>UI Grid Background</h4> 
 
 Using the *"Grid and Dot Backgrounds"* by searching on the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K.<br />
 Copy and paste the code as a second div in your `Hero.tsx` file, directly below the UI Spotlight div:
@@ -474,7 +474,7 @@ Copy and paste the code as a second div in your `Hero.tsx` file, directly below 
 > [!TIP]
 > Use a theme provider to switch the UI Grid Background to dark mode.
 
-<h5 align='center'>Dark Mode in Next.js</h5>
+<h4 align='center'>Dark Mode in Next.js</h4>
 
 Visit [npmjs](https://www.npmjs.com/) and search *"next-themes"* by paco.
 Install it using the ***second*** terminal:
