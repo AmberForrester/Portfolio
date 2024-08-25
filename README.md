@@ -627,7 +627,7 @@ const MagicButton = () => {
   return (
     <button className='relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10'>
         <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]' />
-        <span className={'inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl ${otherClasses}'}>
+        <span className={'inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl gap-3 ${otherClasses}'}>
             Border Magic
         </span>
     </button>
@@ -671,13 +671,32 @@ On line 10, located in the `MagicButton.tsx` file replace Border Magic with {tit
 
 <h4 align='center'>React Icons</h4> 
 
-Add an Icon to your button by using a PNG or SVG file, for this project an icon was used from [react-icons](https://react-icons.github.io/react-icons/).
+Render icons either on the left side or the right side by adding the following to your last span tag within your `MagicButton.tsx` file:
+```tsx
+<span className={'inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl gap-3 ${otherClasses}'}>
+            {position === 'left' && icon}
+            {title}
+            {position === 'right' && icon}
+        </span>
+```
+
+You can add an Icon to your button by using a regular PNG or SVG, but for this project an icon was used from [react-icons](https://react-icons.github.io/react-icons/) because it offers icons from all of the different most popular packages. 
 
 Install the ability to use those icons by installing [React Icons](https://www.npmjs.com/package/react-icons) within your ***second*** terminal by typing:
 ```
 npm i react-icons
 ```
-After that you can use it by simply important an icon. 
+After that you can use it by simply importng an icon starting on line 44 within your `Hero.tsx` file:
+```tsx
+<a href='#about'>
+    <MagicButton
+    title='Discover My Skills'
+    icon={<FaLocationArrow/>}
+    position='right'/>
+</a>
+```
+
+
 
 
 
