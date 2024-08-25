@@ -429,7 +429,9 @@ export default config;
 </details>
 
 > [!NOTE]
-> There will be errors related to your imports for the dependencies not installed yet, if you chose to copy the `tailwind.config.ts` code snippet provided. To solve the errors, within your ***second*** terminal use the following commands:
+> There will be errors related to your imports for the dependencies not installed yet, if you chose to copy the `tailwind.config.ts` code snippet provided above. 
+
+To solve the errors, within your ***second*** terminal use the following commands:
 ```
 npm install mini-svg-data-uri
 ```
