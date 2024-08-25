@@ -487,6 +487,31 @@ npm i next-themes
 
 Google 'next-themes' and find the [Next.js - shadcn/ui](https://ui.shadcn.com/docs/dark-mode/next), and follow the setup to add dark mode.
 
+Within the `app` folder, create a new file named `provider.tsx`. Copy the code provided to create a theme provider. 
+
+Next you want to wrap your root layout by visiting your `layout.tsx` file and wrapping your {children}:
+```tsx
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange>{children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
+```
+Import the { ThemeProvider } from "./provider"; at the top. 
+
 
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
