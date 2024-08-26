@@ -875,14 +875,14 @@ Please take some time to check out the links below!
 
 I found value in each and every one of them, so my hope is that you will to!
 
-* [JavaScript Mastery](https://youtu.be/FTH6Dn3AyIQ?si=ILnRQt5gixQkllFU) - *Special thanks for the incredible tutorial video that brought my Portfolio to life!*
+* [JavaScript Mastery](https://youtu.be/FTH6Dn3AyIQ?si=ILnRQt5gixQkllFU) - ***Special thanks for the incredible tutorial video that brought my Portfolio to life!***
 * [Best README Template](https://github.com/othneildrew/Best-README-Template)
 * [Basic Syntax: Markdown Guide](https://www.markdownguide.org/basic-syntax/#reference-style-links)
 * [Formatting Syntax: GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#animal-bug)
 * [`next/font`](https://nextjs.org/docs/basic-features/font-optimization)
-* [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* [Learn Next.js](https://nextjs.org/learn)
 * [npmDocs](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file)
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
