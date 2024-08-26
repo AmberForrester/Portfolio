@@ -35,7 +35,8 @@
         <li><a href="#setting-up-the-environment">Setting up the Environment</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
           <ul>
-            <li><a href="#vscode-extensions">VSCode Extensions</a></li>   
+            <li><a href="#vscode-extensions">VSCode Extensions</a></li>
+            <li><a href="#project-dependencies">Project Dependencies</a></li>   
           </ul>
       </ul>
     </li>
@@ -187,6 +188,7 @@ theme: {
 
 1. <ins>TailwindCSS IntelliSense</ins> - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
 2. <ins>ES7+ React/Redux/React-Native snippets</ins> - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
+<br />
 
 <h4 align='center'>Project Dependencies</h4> 
 
@@ -197,10 +199,11 @@ When you or another user run the npm install, npm will download both of your dep
 * dependencies: Required packages by your application in production.
 * devDependencies: Packages only needed for both testing and local development.
 
-For this specific project, see the package.json file below:
+For this specific project, see the package.json file below:<br>
 `package.json` file contents will go here.
+<br />
 
-To learn more about *"Specifying dependencies and devDependencies in a package.json file" read the article by visiting the [npmDocs](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file)
+To learn more about ***"Specifying dependencies and devDependencies in a package.json file"*** read the article by visiting the [npmDocs](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file)
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
