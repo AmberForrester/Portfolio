@@ -24,27 +24,29 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-this-project">About This Project</a>
+    <li><a href="#about-this-project">About This Project</a>
       <ul>
         <!-- <li><a href="#built-with">Built With</a></li> -->
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
+    <li><a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#setting-up-the-environment">Setting up the Environment</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
           <ul>
-            <li><a href="#vscode-extensions">VSCode Extensions</a></li>
-            <li><a href="#main-page-spotlight-styling">Main Page Spotlight Styling</a></li>
-            <li><a href="#ui-grid-background">UI Grid Background</a></li>
-            <li><a href="#dark-mode-in-next.js">Dark Mode in Next.js</a></li>
-            <li><a href="#text-generate-effect">Text Generate Effect</a></li>
-            <li><a href="#add-magic-button">Add Magic Button</a></li>
-            <li><a href="#react-icons">React Icons</a></li>
+            <li><a href="#vscode-extensions">VSCode Extensions</a></li>   
           </ul>
+      </ul>
+    </li>
+    <li><a href="#project-features">Project Features</a>
+      <ul>
+        <li><a href="#main-page-spotlight-styling">Main Page Spotlight Styling</a></li>
+        <li><a href="#ui-grid-background">UI Grid Background</a></li>
+        <li><a href="#dark-mode-in-next.js">Dark Mode in Next.js</a></li>
+        <li><a href="#text-generate-effect">Text Generate Effect</a></li>
+        <li><a href="#add-magic-button">Add Magic Button</a></li>
+        <li><a href="#react-icons">React Icons</a></li>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
@@ -71,6 +73,8 @@ However, it is always good practice regardless of your experience to refer to th
 4. [Aceternity UI](https://ui.aceternity.com/)
 5. [TailwindCSS](https://v2.tailwindcss.com/docs/installation)
 6. [npmjs](https://www.npmjs.com/)
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
@@ -108,7 +112,11 @@ npm run dev
 ```
 Open (http://localhost:3000) on your browser to view your project.
 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
+
+
 
 ### Setting up the Environment 
 
@@ -169,8 +177,6 @@ theme: {
 > [!TIP]
 > Add custom colours of your choice, plus a default and create a variant colour to further personalize your portfolio project. 
 
-
-
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 
@@ -182,9 +188,25 @@ theme: {
 1. <ins>TailwindCSS IntelliSense</ins> - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
 2. <ins>ES7+ React/Redux/React-Native snippets</ins> - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
 
+<h4 align='center'>Project Dependencies</h4> 
+
+The specific packages this project depends on are listed as dependencies or devDependencies in your packages `package.json` file. 
+
+When you or another user run the npm install, npm will download both of your dependencies and devDependencies that are listed in the package.json meeting the semantic version requirements listed for each. 
+
+* dependencies: Required packages by your application in production.
+* devDependencies: Packages only needed for both testing and local development.
+
+For this specific project, see the package.json file below:
+`package.json` file contents will go here.
+
+To learn more about *"Specifying dependencies and devDependencies in a package.json file" read the article by visiting the [npmDocs](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file)
+
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
 
+
+## Project Features 
 
 <h4 align='center'>Main Page Spotlight Styling</h4> 
 
@@ -810,21 +832,7 @@ For easier styling with personalization, adjust your `globals.css` file using th
   }
 }
 ```
-
 </details>
-
-
-
-
-
-
-
-
-
-
-
-
-`package.json` file contents will go here.
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
@@ -870,5 +878,8 @@ I found value in each and every one of them, so my hope is that you will to!
 * [Formatting Syntax: GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#animal-bug)
+* [`next/font`](https://nextjs.org/docs/basic-features/font-optimization)
+* [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* [npmDocs](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file)
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
