@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";

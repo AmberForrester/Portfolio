@@ -884,5 +884,7 @@ I found value in each and every one of them, so my hope is that you will to!
 * [`next/font`](https://nextjs.org/docs/basic-features/font-optimization)
 * [Learn Next.js](https://nextjs.org/learn)
 * [npmDocs](https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file)
+* [React Icons](https://react-icons.github.io/react-icons/)
+* [CSS Gradient](https://cssgradient.io/)
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
