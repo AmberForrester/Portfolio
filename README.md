@@ -1,21 +1,21 @@
 <a id="readme-top"></a>
 
-<h1 align='center'>2024 Portfolio :mortar_board:</h1> 
+<h1 align="center">2024 Portfolio :mortar_board:</h1> 
 
-<div align='center'>
+<div align="center">
 
-<img src='' alt=''>
+<img src="" alt="">
 
-<p align='center'>Unveil your journey of a Developer who turns complex problems into elegant solutions. This portfolio is more than just a showcase—it's a testament to the power of passion, precision, and relentless curiosity.
+<p align="center">Unveil your journey of a Developer who turns complex problems into elegant solutions. This portfolio is more than just a showcase—it"s a testament to the power of passion, precision, and relentless curiosity.
 <br />
 <br /> Are you ready to be inspired?
 
-<a href='https://github.com/AmberForrester/Portfolio'><strong>Source Code »</strong></a>
+<a href="https://github.com/AmberForrester/Portfolio"><strong>Source Code »</strong></a>
 <br />
 <br />
-<a href='https://github.com/AmberForrester/Portfolio/issues/new?assignees=&labels=bug&projects=&template=bug-report-%F0%9F%90%9E.md'>Report Bug</a>
+<a href="https://github.com/AmberForrester/Portfolio/issues/new?assignees=&labels=bug&projects=&template=bug-report-%F0%9F%90%9E.md">Report Bug</a>
 .
-<a href='https://github.com/AmberForrester/Portfolio/issues/new?assignees=&labels=enhancement&projects=&template=feature-request-%F0%9F%9A%80.md'>Request Feature</a>
+<a href="https://github.com/AmberForrester/Portfolio/issues/new?assignees=&labels=enhancement&projects=&template=feature-request-%F0%9F%9A%80.md">Request Feature</a>
 </p>
 </div>
 
@@ -102,7 +102,7 @@ Those are the options you want to choose using the left/right arrows, and enter 
 > Would you like to use App Router? (recommended) No / <ins>Yes</ins> <br />
 > Would you like to customize the import alias (`@/*` by default)? <ins>No</ins> / Yes <br />
 
-Navigate to the project's root directory within the terminal using the following command:
+Navigate to the project"s root directory within the terminal using the following command:
 ```
 cd .\nameofyourproject\
 ```
@@ -140,7 +140,7 @@ export const metadata: Metadata = {
 };
 ```
 > [!IMPORTANT]
-> If done correctly, these changes will be visible in your browser's tab.
+> If done correctly, these changes will be visible in your browser"s tab.
 5. Go to your `page.tsx` file, and delete all of the code within the return. Once you have done that you can now add in:
 ```tsx
 export default function Home() {
@@ -155,11 +155,11 @@ export default function Home() {
 ```
 > [!IMPORTANT]
 > If done correctly, you should see the message output on your webpage.
-6. To ensure TailwindCSS is working, add some className's with TailwindCSS properties watching the rendered output on your webpage.
+6. To ensure TailwindCSS is working, add some className"s with TailwindCSS properties watching the rendered output on your webpage.
 ```tsx
 export default function Home() {
   return (
-    <main className='relative bg-black'>
+    <main className="relative bg-black">
       <div>
 ```
 7. Remove the existing backgroundImage code within your `tailwind.config.ts` file and extend the theme by adding your preferred colours:
@@ -168,8 +168,8 @@ theme: {
     extend: {
       colors: {
         black: {
-          DEFAULT: '#000',
-          100: '#000319'
+          DEFAULT: "#000",
+          100: "#000319"
         },
       },
     },
@@ -184,13 +184,13 @@ theme: {
 
 ## Prerequisites 
 
-<h4 align='center'>VSCode Extensions</h4> 
+<h4 align="center">VSCode Extensions</h4> 
 
 1. <ins>TailwindCSS IntelliSense</ins> - *Visualize which CSS properties are applied given a specific TailwindCSS className.* 
 2. <ins>ES7+ React/Redux/React-Native snippets</ins> - *Provides shorthand prefixes,creates faster code snippets, and syntax.*
 <br />
 
-<h4 align='center'>Project Dependencies</h4> 
+<h4 align="center">Project Dependencies</h4> 
 
 The specific packages this project depends on are listed as dependencies or devDependencies in your packages `package.json` file. 
 
@@ -211,7 +211,7 @@ To learn more about ***"Specifying dependencies and devDependencies in a package
 
 ## Project Features 
 
-<h4 align='center'>Main Page Spotlight Styling</h4> 
+<h4 align="center">Main Page Spotlight Styling</h4> 
 
 Create a spotlight style on the main page within the `Hero.tsx` file using [Aceternity UI](https://ui.aceternity.com/). Once on the website use CTRL + K to bring up the search functionality, then type: spotlight and follow installation instructions: <br />
 
@@ -233,13 +233,13 @@ export function cn(...inputs: ClassValue[]) {
 Create a folder within the `components` folder called `ui` - <ins>this will hold all the Acerternity UI components.</ins> <br />
 Within the `ui` folder create the `Spotlight.tsx` file and paste the source code from the installation instructions. 
 
-Add the `Spotlight.tsx` file affect to the `Hero.tsx` component by importing and adding className's with styling: 
+Add the `Spotlight.tsx` file affect to the `Hero.tsx` component by importing and adding className"s with styling: 
 ```tsx
-import { Spotlight } from './ui/Spotlight';
+import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => {
   return (
-    <div className='pb-20 pt-36'>
+    <div className="pb-20 pt-36">
 
         {/**
        *  UI: Spotlights
@@ -247,11 +247,11 @@ const Hero = () => {
        */}
        
       <div>
-        <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white'/>
+        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white"/>
 
-        <Spotlight className='h-[80vh] w-[50vw] top-10 left-full' fill='purple'/>
+        <Spotlight className="h-[80vh] w-[50vw] top-10 left-full" fill="purple"/>
 
-        <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill='blue'/>
+        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue"/>
       </div>
 ```
 
@@ -482,14 +482,14 @@ You will need to create a custom type declaration file to tell TypeScript how to
 2. Next add a folder named `types` and create a custom type declaration file within that folder called `tailwindcss.d.ts`.
 3. Adding the following code:
 ```ts
-declare module 'tailwindcss/lib/util/flattenColorPalette' {
+declare module "tailwindcss/lib/util/flattenColorPalette" {
   export default function flattenColorPalette(colors: any): Record<string, string>;
 }
 ```
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
-<h4 align='center'>UI Grid Background</h4> 
+<h4 align="center">UI Grid Background</h4> 
 
 Search the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K for *"Grid and Dot Backgrounds"*.<br />
 Copy and paste the code as a second div in your `Hero.tsx` file, directly below the UI Spotlight div:
@@ -505,7 +505,7 @@ Copy and paste the code as a second div in your `Hero.tsx` file, directly below 
 > [!TIP]
 > Use a theme provider to switch the UI Grid Background to dark mode.
 
-<h4 align='center'>Dark Mode in Next.js</h4>
+<h4 align="center">Dark Mode in Next.js</h4>
 
 Visit [npmjs](https://www.npmjs.com/) and search *"next-themes"* by paco.
 Install it using the ***second*** terminal:
@@ -513,7 +513,7 @@ Install it using the ***second*** terminal:
 npm i next-themes
 ```
 
-Google 'next-themes' and find the [Next.js - shadcn/ui](https://ui.shadcn.com/docs/dark-mode/next), and follow the setup to add dark mode.
+Google "next-themes" and find the [Next.js - shadcn/ui](https://ui.shadcn.com/docs/dark-mode/next), and follow the setup to add dark mode.
 
 Within the `app` folder, create a new file named `provider.tsx`. Copy the code provided to create a theme provider. 
 
@@ -544,7 +544,7 @@ Import the { ThemeProvider } from "./provider"; at the top.
 
 
 
-<h4 align='center'>Text Generate Effect</h4> 
+<h4 align="center">Text Generate Effect</h4> 
 
 Create a file named `TextGenerateEffect.tsx` within the `ui` components folder.
 
@@ -625,8 +625,8 @@ Within your `Hero.tsx` file, import the <TextGenerateEffect> following the h2 ta
   </h2>
 
     <TextGenerateEffect
-      className='text-center text-[40px] md:text-5xl lg:text-6xl'
-      words='Transforming Concepts into Seamless Experiences'/>
+      className="text-center text-[40px] md:text-5xl lg:text-6xl"
+      words="Transforming Concepts into Seamless Experiences"/>
 </div>
 ```
 
@@ -634,25 +634,25 @@ Within your `Hero.tsx` file, import the <TextGenerateEffect> following the h2 ta
 
 
 
-<h4 align='center'>Add Magic Button</h4> 
+<h4 align="center">Add Magic Button</h4> 
 
 Search the [Aceternity UI](https://ui.aceternity.com/) webpage with CTRL+K for *"buttons"*.
 
 Choose the *"Tailwind CSS buttons"* option, and scroll down to your preferred button type. Click the button to copy return value of the button.
 
-> For this project, the *'Border Magic'* button was selected.
+> For this project, the *"Border Magic"* button was selected.
 
 Within the `ui` folder, create a new file named `MagicButton.tsx`.
 
 Using the rafce import, create a new React Arrow Function Component Export and paste the button within the return:
 ```tsx
-import { title } from 'process'
+import { title } from "process"
 
 const MagicButton = () => {
   return (
-    <button className='relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10'>
-        <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]' />
-        <span className={'inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl gap-3 ${otherClasses}'}>
+    <button className="relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10">
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <span className={"inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl gap-3 ${otherClasses}"}>
             Border Magic
         </span>
     </button>
@@ -664,11 +664,11 @@ export default MagicButton;
 To visualize your button, place the button under the p tag within your `Hero.tsx` file, and wrap it with an ahref link:
 ```tsx
 </p>
-  <a href='#about'>
+  <a href="#about">
     <MagicButton
-      title='Show my work'
-      icon=''
-      position='right'
+      title="Show my work"
+      icon=""
+      position="right"
       />
   </a>
 ```
@@ -686,7 +686,7 @@ const MagicButton = ({title, icon, position, handleClick, otherClasses}: {
 }) => {
   return (
 ```
-The title is already being passed as you can see a button after the text on your main page with the title 'Border Magic'. 
+The title is already being passed as you can see a button after the text on your main page with the title "Border Magic". 
 
 On line 10, located in the `MagicButton.tsx` file replace Border Magic with {title} and you can now see your personalized title from line 45 in your `Hero.tsx` file on your webpage.
 
@@ -694,14 +694,14 @@ On line 10, located in the `MagicButton.tsx` file replace Border Magic with {tit
 
 
 
-<h4 align='center'>React Icons</h4> 
+<h4 align="center">React Icons</h4> 
 
 Render icons either on the left side or the right side by adding the following to your last span tag within your `MagicButton.tsx` file:
 ```tsx
-<span className={'inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl gap-3 ${otherClasses}'}>
-            {position === 'left' && icon}
+<span className={"inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl gap-3 ${otherClasses}"}>
+            {position === "left" && icon}
             {title}
-            {position === 'right' && icon}
+            {position === "right" && icon}
         </span>
 ```
 
@@ -713,15 +713,15 @@ npm i react-icons
 ```
 After that you can use it by simply importng an icon starting on line 44 within your `Hero.tsx` file:
 ```tsx
-<a href='#about'>
+<a href="#about">
     <MagicButton
-    title='Discover My Skills'
+    title="Discover My Skills"
     icon={<FaLocationArrow/>}
-    position='right'/>
+    position="right"/>
 </a>
 ```
 Making sure the import has reflected on the top of your `Hero.tsx` file:
-> import { FaLocationArrow } from 'react-icons/fa6';
+> import { FaLocationArrow } from "react-icons/fa6";
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
@@ -849,11 +849,11 @@ If you have a suggestion that would make this project better, please fork the re
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+3. Commit your Changes (`git commit -m "Add some AmazingFeature"`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Please, don't forget to give the project a :star:! 
+Please, don"t forget to give the project a :star:! 
 
 I appreciate you!
 
