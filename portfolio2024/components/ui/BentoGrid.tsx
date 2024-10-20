@@ -3,7 +3,8 @@ import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import GridGlobe from "./GridGlobe";
+
+import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
@@ -17,8 +18,7 @@ export const BentoGrid = ({
 }) => {
   return (
     <div
-      className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+      className={cn("grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto",
         className
       )}
     >
@@ -81,7 +81,6 @@ export const BentoGridItem = ({
         <div className={`${id === 6 && "flex justify-center"} h-full`}>
           <div className="w-full h-full absolute">
             {img && (
-              // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={img}
                 alt={img}
@@ -91,7 +90,6 @@ export const BentoGridItem = ({
           </div>
             <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}>
                 {spareImg && (
-                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                         src={spareImg}
                         alt={spareImg}
@@ -117,7 +115,7 @@ export const BentoGridItem = ({
                 
 
                     {/* for the github 3d globe */}
-                    {id === 2 && <GridGlobe/>}
+                    {id === 2 && <GlobeDemo />}
 
                     {/* Tech stack list div */}
                     {id === 3 && (
@@ -167,4 +165,4 @@ export const BentoGridItem = ({
         </div>
     </div>
   );
-};
+}

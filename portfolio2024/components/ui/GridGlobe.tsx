@@ -7,7 +7,7 @@ const World = dynamic(() => import("./Globe").then((m) => m.World), {
   ssr: false,
 });
 
-export function GridGlobe() {
+export function GlobeDemo() {
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
@@ -404,6 +404,4 @@ export function GridGlobe() {
       </div>
     </div>
   );
-};
-
-export default GridGlobe;
+}

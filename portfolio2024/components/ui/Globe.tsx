@@ -5,7 +5,6 @@ import ThreeGlobe from "three-globe";
 import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "@/data/globe.json";
-
 declare module "@react-three/fiber" {
   interface ThreeElements {
     threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
@@ -92,15 +91,13 @@ export function Globe({ globeConfig, data }: WorldProps) {
     ...globeConfig,
   };
 
-  // _buildData and _buildMaterial only need to run once.
   useEffect(() => {
     if (globeRef.current) {
       _buildData();
       _buildMaterial();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Empty dependency array since globeRef.current doesn't change over time.
-  
+  }, [globeRef.current]);
+
   const _buildMaterial = () => {
     if (!globeRef.current) return;
 
@@ -138,6 +135,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
       });
     }
 
+    // remove duplicates for same lat and lng
     const filteredPoints = points.filter(
       (v, i, a) =>
         a.findIndex((v2) =>
@@ -150,7 +148,6 @@ export function Globe({ globeConfig, data }: WorldProps) {
     setGlobeData(filteredPoints);
   };
 
-  // Second useEffect: starts animation if both globeRef.current and globeData exist
   useEffect(() => {
     if (globeRef.current && globeData) {
       globeRef.current
@@ -165,8 +162,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
         });
       startAnimation();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [globeData]); // Only track globeData because it is state that can change.
+  }, [globeData]);
 
   const startAnimation = () => {
     if (!globeRef.current || !globeData) return;
@@ -206,7 +202,6 @@ export function Globe({ globeConfig, data }: WorldProps) {
       );
   };
 
-  // Third useEffect: interval depends on globeRef.current and globeData
   useEffect(() => {
     if (!globeRef.current || !globeData) return;
 
@@ -226,7 +221,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     return () => {
       clearInterval(interval);
     };
-  }, [globeRef.current, globeData]); // Add both globeRef.current and globeData as dependencies
+  }, [globeRef.current, globeData]);
 
   return (
     <>
@@ -242,7 +237,7 @@ export function WebGLRendererConfig() {
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-  }, [gl, size]); // Add these as dependencies
+  }, []);
 
   return null;
 }
