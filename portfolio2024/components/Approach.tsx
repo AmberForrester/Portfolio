@@ -7,15 +7,13 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        My unique<span className="text-purple">approach</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
-          title="Planning & Strategy"
+          title="Collaborative Discovery"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="Together, we’ll define project goals, target audience, and must-have features. From site structure to content strategy, we’ll align every detail to ensure the vision is clearly mapped out."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -23,11 +21,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Code in Motion"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="With the plan set I dive into the code, turning ideas into reality while keeping you in the loop. Expect frequent updates as I transform sketches into polished, functional code."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -40,11 +36,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Launch"
+          title="Seamless Launch"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="The final stage brings everything to life. Once the design is approved, I build your website from the ground up, ensuring a smooth, polished launch that meets every expectation."
         >
           <CanvasRevealEffect
             animationSpeed={3}
