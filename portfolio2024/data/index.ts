@@ -55,7 +55,7 @@ export const gridItems = [
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
-    spareImg: "/grid.svg",
+    spareImg: "",
   },
   {
     id: 6,
@@ -205,9 +205,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    href: "https://github.com/AmberForrester"
   },
   {
     id: 3,
     img: "/link.svg",
+    href: "https://www.linkedin.com/in/amber-forrester-6455a582/"
   },
 ];

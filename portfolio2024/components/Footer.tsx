@@ -15,7 +15,7 @@ const Footer = () => {
             Reach out to me today and let&apos;s discuss how I can help you
             achieve your goals.
             </p>
-            <a href="mailto:contact@jsmastery.pro">
+            <a href="mailto:meagenaf@gmail.com">
             <MagicButton
                 title="Let's get in touch"
                 icon={<FaLocationArrow />}
@@ -32,12 +32,14 @@ const Footer = () => {
 
             <div className="flex items-center md:gap-3 gap-6">
             {socialMedia.map((info) => (
-                <div
-                key={info.id}
-                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-                >
-                <img src={info.img} alt="icons" width={20} height={20} />
-                </div>
+                <a key={info.id} href={info.href} target="_blank" rel="noopener noreferrer">
+                    <div 
+                        className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+                        >
+                        <img src={info.img} alt="icons" width={20} height={20} />
+                    </div>
+                </a>
+                
             ))}
             </div>
         </div>
