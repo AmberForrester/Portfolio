@@ -50,20 +50,15 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+
 
   const handleCopy = () => {
     const text = "meagenaf@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
+
+
 
   return (
     <div
@@ -162,8 +157,9 @@ export const BentoGridItem = ({
                   }`}
               >
                 <Player
+                  key={copied ? "confetti-play" : "confetti-reset"}
                   autoplay={copied}
-                  loop={copied}
+                  loop={false}
                   animationData={animationData}
                   style={{ height: 200, width: 400 }}
                 />
