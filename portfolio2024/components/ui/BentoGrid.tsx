@@ -9,6 +9,7 @@ import MagicButton from "../MagicButton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel } from "swiper/modules";
 import "swiper/swiper-bundle.css";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -78,9 +79,11 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
+              height={200}
+              width={200}
               className={cn(imgClassName, "object-cover object-center ")}
             />
           )}
@@ -90,10 +93,11 @@ export const BentoGridItem = ({
             } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
-              //   width={220}
+              height={200}
+              width={200}
               className="object-cover object-center w-full h-full"
             />
           )}
@@ -124,10 +128,10 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2" style={{ overflow: "visible" }}>
               {/* Left Tech Stack (Swiper with vertical scrolling) */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
                 <Swiper
                   direction="vertical"
                   mousewheel={true}
@@ -135,25 +139,26 @@ export const BentoGridItem = ({
                   spaceBetween={5}
                   slidesPerView={3}
                   loop={true}
-                  style={{ height: "230px" }}
+                  style={{ height: "270px" }}
                 >
                   {leftLists.map((item, i) => (
-                    <SwiperSlide key={i}>
+                    <SwiperSlide key={i} style={{ height: "85px" }}>
                       <span
-                        className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                        className="lg:py-2 lg:px-3 py-1 px-2 text-xs lg:text-base opacity-50 
                         lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                        style={{ lineHeight: 1.4 }}
                       >
                         {item}
                       </span>
                     </SwiperSlide>
                   ))}
                 </Swiper>
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
               </div>
 
               {/* Right Tech Stack (Swiper with vertical scrolling) */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
                 <Swiper
                   direction="vertical"
                   mousewheel={true}
@@ -161,13 +166,14 @@ export const BentoGridItem = ({
                   spaceBetween={5}
                   slidesPerView={3}
                   loop={true}
-                  style={{ height: "230px" }}
+                  style={{ height: "270px" }}
                 >
                   {rightLists.map((item, i) => (
-                    <SwiperSlide key={i}>
+                    <SwiperSlide key={i} style={{ height: "85px" }}>
                       <span
-                        className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                        className="lg:py-2 lg:px-3 py-1 px-2 text-xs lg:text-base opacity-50 
                         lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                        style={{ lineHeight: 1.4 }}
                       >
                         {item}
                       </span>
