@@ -6,6 +6,9 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel } from "swiper/modules";
+import "swiper/swiper-bundle.css";
 
 export const BentoGrid = ({
   className,
@@ -45,8 +48,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "TypeScript", "Python"];
-  const rightLists = ["VueJS", "NextJS", "REST APIs"];
+  const leftLists = ["ReactJS", "Express", "TypeScript", "GraphQL", "MongoDB", "REST APIs"];
+  const rightLists = ["VueJS", "NextJS", "Django", "Flask", "Python", "NodeJS"];
 
   const [copied, setCopied] = useState(false);
 
@@ -122,30 +125,55 @@ export const BentoGridItem = ({
           {/* Tech stack list div */}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              {/* tech stack lists */}
+              {/* Left Tech Stack (Swiper with vertical scrolling) */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <Swiper
+                  direction="vertical"
+                  mousewheel={true}
+                  modules={[Mousewheel]}
+                  spaceBetween={5}
+                  slidesPerView={3}
+                  loop={true}
+                  style={{ height: "230px" }}
+                >
+                  {leftLists.map((item, i) => (
+                    <SwiperSlide key={i}>
+                      <span
+                        className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                      >
+                        {item}
+                      </span>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
+
+              {/* Right Tech Stack (Swiper with vertical scrolling) */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
+                <Swiper
+                  direction="vertical"
+                  mousewheel={true}
+                  modules={[Mousewheel]}
+                  spaceBetween={5}
+                  slidesPerView={3}
+                  loop={true}
+                  style={{ height: "230px" }}
+                >
+                  {rightLists.map((item, i) => (
+                    <SwiperSlide key={i}>
+                      <span
+                        className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                      >
+                        {item}
+                      </span>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
             </div>
           )}
