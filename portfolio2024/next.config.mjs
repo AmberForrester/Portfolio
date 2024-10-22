@@ -8,8 +8,10 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,  // This will skip ESLint during builds
+  },
+  images: {
+    unoptimized: true,  // Disable image optimization for static export
   }
-  // Add any additional configurations here if needed
 };
 
 export default nextConfig;
