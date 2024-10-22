@@ -16,8 +16,9 @@ const Approach = () => {
           des="Together, we’ll define project goals, target audience, and must-have features. From site structure to content strategy, we’ll align every detail to ensure the vision is clearly mapped out."
         >
           <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
+            animationSpeed={3}
+            containerClassName="bg-black-100 rounded-3xl overflow-hidden"
+            colors={[[203, 172, 249]]} 
           />
         </Card>
         <Card
@@ -27,12 +28,8 @@ const Approach = () => {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
-            colors={[
-              [255, 166, 158],
-              [221, 255, 247],
-            ]}
-            dotSize={2}
+            containerClassName="bg-black-100 rounded-3xl overflow-hidden"
+            colors={[[203, 172, 249]]} 
           />
         </Card>
         <Card
@@ -42,8 +39,8 @@ const Approach = () => {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
-            colors={[[125, 211, 252]]}
+            containerClassName="bg-black-100 rounded-3xl overflow-hidden"
+            colors={[[203, 172, 249]]} 
           />
         </Card>
       </div>
