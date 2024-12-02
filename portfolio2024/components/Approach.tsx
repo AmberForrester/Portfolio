@@ -24,7 +24,9 @@ const Approach = () => {
         <Card
           title="Code in Motion"
           icon={<AceternityIcon order="Phase 2" />}
-          des="With the plan set I dive into the code, turning ideas into reality while keeping you in the loop. Expect frequent updates as I transform sketches into polished, functional code."
+          des="With the plan set I dive into the code, turning ideas into reality while keeping you in the loop. Expect frequent updates as I transform sketches into polished, functional code.
+          
+          I believe in the power of thoughtful iteration—leveraging logs to track and resolve issues rather than immediately altering legacy code, ensuring stability and achieving project goals without introducing unnecessary risks."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -35,7 +37,7 @@ const Approach = () => {
         <Card
           title="Seamless Launch"
           icon={<AceternityIcon order="Phase 3" />}
-          des="The final stage brings everything to life. Once the design is approved, I build your website from the ground up, ensuring a smooth, polished launch that meets every expectation."
+          des="The final stage brings everything to life. Once the design is approved, I build your application from the ground up, ensuring a smooth, polished launch that meets every expectation."
         >
           <CanvasRevealEffect
             animationSpeed={3}
