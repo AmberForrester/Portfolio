@@ -24,10 +24,8 @@ const Approach = () => {
         <Card
           title="Code in Motion"
           icon={<AceternityIcon order="Phase 2" />}
-          des={`With the plan set I dive into the code, turning ideas into reality while keeping you in the loop. Expect frequent updates as I transform sketches into polished, functional code.
-          
-          I believe in the power of thoughtful iteration—leveraging logs to track and resolve issues rather than immediately altering legacy code, ensuring stability and achieving project goals without introducing unnecessary risks.`}
-        >
+          des={`With the plan set I dive into the code, turning ideas into reality while keeping you in the loop. Expect frequent updates as I transform sketches into polished, functional code.\n\nI believe in the power of thoughtful iteration—leveraging logs to track and resolve issues rather than immediately altering legacy code, ensuring stability and achieving project goals without introducing unnecessary risks.`}
+        >          
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black-100 rounded-3xl overflow-hidden"
@@ -111,7 +109,7 @@ const Card = ({
           className="text-sm opacity-0 group-hover/canvas-card:opacity-100
          relative z-10 mt-4 group-hover/canvas-card:text-white text-center
          group-hover/canvas-card:-translate-y-2 transition duration-200"
-          style={{ color: "#E4ECFF" }}
+          style={{ color: "#E4ECFF", whiteSpace: "pre-wrap" }}
         >
           {des}
         </p>
