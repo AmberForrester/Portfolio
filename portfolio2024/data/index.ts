@@ -83,7 +83,7 @@ export const projects = [
     title: "Evently: Event Management Platform",
     des: "Enhance your ablity to create, organize, and manage events",
     img: "/evently.png",
-    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/mongodb.svg"],
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/mongodb.svg", "/stripe.svg"],
     link: "https://evently-pink-sigma.vercel.app",
   },
   {
@@ -91,7 +91,7 @@ export const projects = [
     title: "StoreIt: Your Personal Cloud",
     des: "Online platform where Developers from around the world can create a profile, engage with other developers while sharing their projects.",
     img: "/storeit.png",
-    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/figma.svg", "/appwrite.png"],
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/figma.svg", "/appwrite.png", "/shadcn.png"],
     link: "https://www.storeit.amberforrester.io",
   },
   {
@@ -99,7 +99,7 @@ export const projects = [
     title: "LiveDocs: Real-Time Collaboration",
     des: "A community-focused hub for full stack engineering insights.",
     img: "/livedocs.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/clerk.png", "/liveblocks.png"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/re.svg", "/clerk.png", "/liveblocks.png"],
     link: "https://livedocs-livid.vercel.app",
   },
   {
@@ -107,7 +107,7 @@ export const projects = [
     title: "Quick Gist: AI Summarizer",
     des: "Article summarizer application using OpenAI's GPT model",
     img: "/quickgist.png",
-    iconLists: ["/openai.png", "/tail.svg", "/js.svg", "/vite.svg", "/redux.svg", "/rapidapi.png"],
+    iconLists: ["/openai.png", "/tail.svg", "/js.svg", "/vite.svg", "/redux.svg", "/rapidapi.png", "/re.svg"],
     link: "https://quickgist.amberforrester.io",
   },
   {

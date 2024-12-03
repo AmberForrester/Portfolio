@@ -82,7 +82,7 @@ const RecentProjects = () => {
                   <p className="font-bold flex lg:text-xl md:text-xs text-sm text-purple">
                     Explore
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <FaLocationArrow className="ms-2" color="#CBACF9" />
                 </div>
               </div>
             </PinContainer>
