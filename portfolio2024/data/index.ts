@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Innovation Hub", link: "#innovation_pipeline" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -120,37 +120,28 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
+export const innovation_pipeline = [
   {
-    quote:
-      "Collaborating with Amber Forrester was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Amber's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Amber is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    desc:
+      "@Vibe is an innovative internal social media platform designed to enhance productivity and foster collaboration within companies. Inspired by the simplicity of Threads, @Vibe serves as a centralized hub for team communication, department updates, and company-wide interactions all under one roof. Empowering employees to stay connected, informed, and engaged. It’s more than just a communication tool; it’s the heartbeat of a modern, connected workplace, redefining how teams share, grow, and succeed together.",
+    name: "@Vibe",
+    title: "Redifining Workplace Collaboration",
+    src: "/vibe.png",
   },
   {
-    quote:
-      "Collaborating with Amber Forrester was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Amber's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Amber is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    desc:
+      "StackSociety is a dedicated platform where full-stack software engineers come together to share invaluable insights, experiences, and resources. It’s a hub for developers to showcase their journeys, offer tips and tricks, and recommend books that have significantly shaped their growth. Built with Next.js, StackSociety is designed to foster collaboration, enhance the open-source community, and amplify the value of shared knowledge. It’s more than a blog—it’s a movement to support and uplift developers across the globe.",
+    name: "Stack Society",
+    title: "Empowering Developers Together",
+    src: "/StackSociety.png",
   },
   {
-    quote:
-      "Collaborating with Amber Forrester was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Amber's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Amber is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Amber Forrester was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Amber's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Amber is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Amber Forrester was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Amber's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Amber is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+    desc:
+      "Donezino is your ultimate productivity companion, designed to help you organize tasks, stay focused, and achieve your goals effortlessly. From time-blocking your day to managing family events like birthdays and anniversaries, Donezino keeps everything in one place. Prioritize daily tasks by importance, set reminders, and never miss a deadline again. With Donezino, simplify your schedule and take control of your time, whether you're tackling work projects or personal to-dos.",
+    name: "Donezno",
+    title: "Productivity Made Simple",
+    src: "/donezno.png",
+  }
 ];
 
 export const companies = [
@@ -189,7 +180,7 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Innovation-Driven Full Stack Developer",
+    title: "Innovation-Driven Full Stack Software Engineer",
     desc: "Pioneered full stack applications, balancing both front-end and back-end responsibilities.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",

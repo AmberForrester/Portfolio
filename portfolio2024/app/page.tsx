@@ -4,7 +4,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
-import Clients from "@/components/Clients";
+import Clients from "@/components/Innovation";
 import Experience from "@/components/Experience";
 import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
