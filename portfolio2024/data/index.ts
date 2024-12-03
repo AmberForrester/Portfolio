@@ -127,6 +127,7 @@ export const innovation_pipeline = [
     name: "@Vibe",
     title: "Redifining Workplace Collaboration",
     src: "/vibe.png",
+    iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/tail.svg", "/mongodb.svg", "/figma.svg"],
   },
   {
     desc:
@@ -134,6 +135,7 @@ export const innovation_pipeline = [
     name: "Stack Society",
     title: "Empowering Developers Together",
     src: "/stacksociety.png",
+    iconLists: ["/next.svg", "/re.svg", "/graphql.svg", "/tail.svg", "/hygraph.png"],
   },
   {
     desc:
@@ -141,6 +143,7 @@ export const innovation_pipeline = [
     name: "Donezno",
     title: "Productivity Made Simple",
     src: "/donezno.png",
+    iconLists: ["/next.svg", "/re.svg", "/supabase.png", "/zustand.png", "/tail.svg", "/ts.svg", "/tanstackquery.png"],
   }
 ];
 

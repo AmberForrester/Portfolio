@@ -10,6 +10,7 @@ type InnovationPipelineItem = {
   name: string;
   title: string;
   src: string;
+  iconLists: string[];
 };
 
 export const AnimatedTestimonials = ({
@@ -33,9 +34,9 @@ export const AnimatedTestimonials = ({
 
   return (
     <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
-      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 items-center gap-20">
         <div>
-          <div className="relative h-80 w-full">
+          <div className="relative h-80 w-full flex items-center justify-center">
             <AnimatePresence>
               {items.map((item, index) => (
                 <motion.div
@@ -79,6 +80,33 @@ export const AnimatedTestimonials = ({
                 </motion.div>
               ))}
             </AnimatePresence>
+          </div>
+
+          {/* TECH STACK ICONS */}
+          <div className="relative flex items-center justify-center mt-8 mb-3">
+            <div className="flex relative"
+              style={{
+                left: `${2.5 * (items[active].iconLists.length - 1)}px`,
+              }}
+            >
+                {items[active].iconLists.map((icon, index) => (
+                <div
+                  key={index}
+                  className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                  style={{
+                    transform: `translateX(-${5 * index}px)`,
+                  }}
+                >
+                  <Image
+                    src={icon}
+                    alt={`icon-${index}`}
+                    className="p-2"
+                    height={100}
+                    width={100}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="flex justify-between flex-col py-4">
