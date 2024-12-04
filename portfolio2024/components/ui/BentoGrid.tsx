@@ -6,10 +6,9 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel } from "swiper/modules";
-import "swiper/swiper-bundle.css";
 import Image from "next/image";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 
 export const BentoGrid = ({
   className,
@@ -49,8 +48,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "TypeScript", "GraphQL", "MongoDB", "REST APIs"];
-  const rightLists = ["VueJS", "NextJS", "Django", "Flask", "Python", "NodeJS"];
+  const frontEnd = ["ReactJS", "Express", "TypeScript", "GraphQL", "MongoDB", "REST APIs"];
+  const backEnd = ["VueJS", "NextJS", "Django", "Flask", "Python", "NodeJS"];
 
   const [copied, setCopied] = useState(false);
 
@@ -127,62 +126,41 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {/* Tech stack list div */}
-          {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2" style={{ overflow: "visible" }}>
-              {/* Left Tech Stack (Swiper with vertical scrolling) */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
-                <Swiper
-                  direction="vertical"
-                  mousewheel={true}
-                  modules={[Mousewheel]}
-                  spaceBetween={5}
-                  slidesPerView={3}
-                  loop={true}
-                  style={{ height: "270px" }}
-                >
-                  {leftLists.map((item, i) => (
-                    <SwiperSlide key={i} style={{ height: "85px" }}>
-                      <span
-                        className="lg:py-2 lg:px-3 py-1 px-2 text-xs lg:text-base opacity-50 
-                        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                        style={{ lineHeight: 1.4 }}
-                      >
-                        {item}
-                      </span>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
-              </div>
+          { id === 3 && (
+            <div className="flex flex-col gap-6 p-4 w-full">
 
-              {/* Right Tech Stack (Swiper with vertical scrolling) */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center bg-[#10132E]"></span>
-                <Swiper
-                  direction="vertical"
-                  mousewheel={true}
-                  modules={[Mousewheel]}
-                  spaceBetween={5}
-                  slidesPerView={3}
-                  loop={true}
-                  style={{ height: "270px" }}
-                >
-                  {rightLists.map((item, i) => (
-                    <SwiperSlide key={i} style={{ height: "85px" }}>
-                      <span
-                        className="lg:py-2 lg:px-3 py-1 px-2 text-xs lg:text-base opacity-50 
-                        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                        style={{ lineHeight: 1.4 }}
-                      >
-                        {item}
-                      </span>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+              <div className="absolute bottom-8 right-8 flex flex-col gap-4">
+                {/* Select for Left Tech Stack */}
+                <Select>
+                    <SelectTrigger className="w-55 bg-[#10132E] text-white">
+                      <SelectValue placeholder="Frontend Essentials" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {frontEnd.map((item, index) => (
+                        <SelectItem key={index} value={item}>
+                          {item}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+
+                  {/* Select for Right Tech Stack */}
+                  <Select>
+                    <SelectTrigger className="w-55 bg-[#10132E] text-white gap-4">
+                      <SelectValue placeholder="Backend Powerhouses" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {backEnd.map((item, index) => (
+                        <SelectItem key={index} value={item}>
+                          {item}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
               </div>
             </div>
           )}
+
           {id === 6 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
