@@ -46,13 +46,13 @@ const Hero = () => {
                 {/**
                 *  Link: https://ui.aceternity.com/components/text-generate-effect*/}
                 <TextGenerateEffect
-                words="Turning Ordinary Ideas into Extraordinary User Experiences"
+                words={`Turning Ordinary Ideas into\n Extraordinary User Experiences`}
                 className="text-center text-[40px] md:text-5xl lg:text-6xl"
                 />
                 <br/>
 
                 <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                    Hi there! I&apos;m Amber, a retired Nurse who traded scrubs for Code. Now a Full Stack Software Engineer with a passion for crafting innovative solutions from the heart of Canada. <br/>
+                    Hey! I&apos;m Amber, a retired Nurse who traded scrubs for Code. Now a Full Stack Software Engineer with a passion for crafting innovative solutions from the heart of Canada. <br/>
                     <br/>
 
                     Ready to see how my diverse skills and experience can bring value to your team?
