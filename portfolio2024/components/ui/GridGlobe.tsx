@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
-const World = dynamic(() => import("./Globe").then((m) => m.World), {
+const World = dynamic(() => import("../ui/Globe").then((m) => m.World), {
   ssr: false,
 });
 
@@ -404,6 +404,6 @@ const GridGlobe = () => {
       </div>
     </div>
   );
-};
+}
 
 export default GridGlobe;
