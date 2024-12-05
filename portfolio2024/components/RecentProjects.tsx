@@ -74,8 +74,8 @@ const RecentProjects = () => {
                 {/* PROJECT DETAILS PAGE USING EXPLORE */}
                 <Link href={`/projects/${slug}`}>
                   <div className="flex justify-center items-center cursor-pointer">
-                    <p className="flex font-bold lg:text-xl md:text-xs text-sm text-purple">
-                      Explore
+                    <p className="flex font-bold lg:text-lg md:text-xs text-sm text-purple">
+                      Details
                     </p>
                     <FaLocationArrow className="ms-2" color="#CBACF9" />
                   </div>                

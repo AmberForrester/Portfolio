@@ -1,3 +1,4 @@
+import BackButton from "@/components/BackButton";
 import { projects } from "@/data";
 import { notFound } from "next/navigation";
 
@@ -28,6 +29,9 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
       >
         Visit Project
       </a>
+
+      <BackButton />
+
     </div>
   );
 }
