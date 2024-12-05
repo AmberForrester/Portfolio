@@ -115,7 +115,7 @@ export const projects = [
     title: "Modern Next.js Portfolio: Personal Milestone",
     des: "Showcases a beautifully crafted and highly functional portfolio, effectively presenting skills and projects while marking a milestone of dedication and growth in web development.",
     img: "/portfolio.png",
-    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternityui.png"],
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/aceternityui.png", "/npm.svg"],
     link: "https://www.amberforrester.io",
   },
 ];

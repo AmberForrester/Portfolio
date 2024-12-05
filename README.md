@@ -887,5 +887,6 @@ I found value in each and every one of them, so my hope is that you will to!
 * [React Icons](https://react-icons.github.io/react-icons/)
 * [CSS Gradient](https://cssgradient.io/)
 * [SENTRY - Application Monitoring Software](https://sentry.io/)
+* [Open-Licensed SVG Vector and Icons](https://www.svgrepo.com/)
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>

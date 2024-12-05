@@ -71,12 +71,12 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
+                {/* <div className="flex justify-center items-center">
                   <p className="font-bold flex lg:text-xl md:text-xs text-sm text-purple">
                     Explore
                   </p>
                   <FaLocationArrow className="ms-2" color="#CBACF9" />
-                </div>
+                </div> */}
               </div>
             </PinContainer>
           </div>
