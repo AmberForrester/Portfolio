@@ -4,6 +4,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import Image from "next/image";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -13,8 +14,8 @@ const RecentProjects = () => {
         <span className="block sm:inline text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map(({ id, title, des, img, iconLists, link }) => (
-          <div key={id}
+        {projects.map(({ slug, title, des, img, iconLists, link }) => (
+          <div key={slug}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">
             <PinContainer title={link} link={link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[10vh] lg:h-[30vh] mb-10">
@@ -70,12 +71,16 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex font-bold lg:text-xl md:text-xs text-sm text-purple">
-                    Explore
-                  </p>
-                  <FaLocationArrow className="ms-2" color="#CBACF9" />
-                </div>
+                {/* PROJECT DETAILS PAGE USING EXPLORE */}
+                <Link href={`/projects/${slug}`}>
+                  <div className="flex justify-center items-center cursor-pointer">
+                    <p className="flex font-bold lg:text-xl md:text-xs text-sm text-purple">
+                      Explore
+                    </p>
+                    <FaLocationArrow className="ms-2" color="#CBACF9" />
+                  </div>                
+                </Link>
+
               </div>
             </PinContainer>
           </div>

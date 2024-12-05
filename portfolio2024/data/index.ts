@@ -69,10 +69,13 @@ export const gridItems = [
   },
 ];
 
+import slugify from "slugify";
+
 export const projects = [
   {
     id: 1,
     title: "Zeniverse: Portal to the Metaverse",
+    slug: slugify("Zeniverse: Portal to the Metaverse", { lower: true, remove: /[:]/g }),
     des: "Bridges the gap between digital and physical worlds, offering a seamless platform for immersive and harmonious virtual experiences, enabling users to connect within the expansive realm.",
     img: "/zeniverse.png",
     iconLists: ["/re.svg", "/vite.svg", "/tail.svg", "/gsap.svg", "/js.svg", "/clippy.png"],
@@ -81,6 +84,7 @@ export const projects = [
   {
     id: 2,
     title: "Evently: Event Management Platform",
+    slug: slugify("Evently: Event Management Platform", { lower: true, remove: /[:]/g }),
     des: "Empowers users to effortlessly create, organize, and manage events. Solving the complexities of event planning with intuitive tools for attendee tracking, and seamless communication.",
     img: "/evently.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/mongodb.svg", "/stripe.svg"],
@@ -89,6 +93,7 @@ export const projects = [
   {
     id: 3,
     title: "StoreIt: Your Personal Cloud",
+    slug: slugify("StoreIt: Your Personal Cloud", { lower: true, remove: /[:]/g }),
     des: "Empowers users to securely store, organize, and share their PDFs, music, videos, and more. Solving the hassle of managing digital content while ensuring seamless accessibility across devices.",
     img: "/storeit.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/figma.svg", "/appwrite.png", "/shadcn.png"],
@@ -97,6 +102,7 @@ export const projects = [
   {
     id: 4,
     title: "LiveDocs: Real-Time Collaboration",
+    slug: slugify("LiveDocs: Real-Time Collaboration", { lower: true, remove: /[:]/g }),
     des: "Revolutionizes teamwork by enabling users to create, share, and refine content together solving the challenge of disjointed workflows and fostering seamless productivity.",
     img: "/livedocs.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/re.svg", "/clerk.png", "/liveblocks.png"],
@@ -105,6 +111,7 @@ export const projects = [
   {
     id: 5,
     title: "Quick Gist: AI-Powered Summarizer",
+    slug: slugify("Quick Gist: AI-Powered Summarizer", { lower: true, remove: /[:]/g }),
     des: "Leverages OpenAI's GPT model to condense lengthy articles into concise summaries, solving the problem of information overload and helping users quickly grasp key insights with ease.",
     img: "/quickgist.png",
     iconLists: ["/openai.png", "/tail.svg", "/js.svg", "/vite.svg", "/redux.svg", "/rapidapi.png", "/re.svg"],
@@ -113,6 +120,7 @@ export const projects = [
   {
     id: 6,
     title: "Modern Next.js Portfolio: Personal Milestone",
+    slug: slugify("Modern Next.js Portfolio: Personal Milestone", { lower: true, remove: /[:]/g }),
     des: "Showcases a beautifully crafted and highly functional portfolio, effectively presenting skills and projects while marking a milestone of dedication and growth in web development.",
     img: "/portfolio.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/aceternityui.png", "/npm.svg"],
