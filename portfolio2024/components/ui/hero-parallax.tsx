@@ -19,9 +19,9 @@ export const HeroParallax = ({
     screenshots: string[];
   };
 }) => {
-  const firstRow = selectedProject.screenshots.slice(0, 3);
-  const secondRow = selectedProject.screenshots.slice(3, 6);
-  const thirdRow = selectedProject.screenshots.slice(6, 9);
+  const firstRow = selectedProject.screenshots.slice(0, 4);
+  const secondRow = selectedProject.screenshots.slice(4, 8);
+  const thirdRow = selectedProject.screenshots.slice(8, 12);
 
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
