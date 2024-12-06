@@ -26,6 +26,7 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
     title: project.title,
     description: project.des,
     screenshots: project.screenshots,
+    iconLists: project.iconLists,
   };
 
   return (
