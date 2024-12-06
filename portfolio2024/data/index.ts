@@ -80,6 +80,12 @@ export const projects = [
     img: "/zeniverse.png",
     iconLists: ["/re.svg", "/vite.svg", "/tail.svg", "/gsap.svg", "/js.svg", "/clippy.png"],
     link: "https://zeniverse.vercel.app",
+    screenshots: [
+      "/screenshots/zeniverse_1.png",
+      "/screenshots/zeniverse_2.png",
+      "/screenshots/zeniverse_3.png",
+      "/screenshots/zeniverse_4.png",
+    ],
   },
   {
     id: 2,
@@ -89,6 +95,12 @@ export const projects = [
     img: "/evently.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/mongodb.svg", "/stripe.svg"],
     link: "https://evently-pink-sigma.vercel.app",
+    screenshots: [
+      "/screenshots/evently_1.png",
+      "/screenshots/evently_2.png",
+      "/screenshots/evently_3.png",
+      "/screenshots/evently_4.png",
+    ],
   },
   {
     id: 3,
@@ -98,6 +110,12 @@ export const projects = [
     img: "/storeit.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/figma.svg", "/appwrite.png", "/shadcn.png"],
     link: "https://www.storeit.amberforrester.io",
+    screenshots: [
+      "/screenshots/storeit_1.png",
+      "/screenshots/storeit_2.png",
+      "/screenshots/storeit_3.png",
+      "/screenshots/storeit_4.png",
+    ],
   },
   {
     id: 4,
@@ -107,6 +125,12 @@ export const projects = [
     img: "/livedocs.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/re.svg", "/clerk.png", "/liveblocks.png"],
     link: "https://livedocs-livid.vercel.app",
+    screenshots: [
+      "/screenshots/livedocs_1.png",
+      "/screenshots/livedocs_2.png",
+      "/screenshots/livedocs_3.png",
+      "/screenshots/livedocs_4.png",
+    ],
   },
   {
     id: 5,
@@ -116,6 +140,12 @@ export const projects = [
     img: "/quickgist.png",
     iconLists: ["/openai.png", "/tail.svg", "/js.svg", "/vite.svg", "/redux.svg", "/rapidapi.png", "/re.svg"],
     link: "https://quickgist.amberforrester.io",
+    screenshots: [
+      "/screenshots/quickgist_1.png",
+      "/screenshots/quickgist_2.png",
+      "/screenshots/quickgist_3.png",
+      "/screenshots/quickgist_4.png",
+    ],
   },
   {
     id: 6,
@@ -125,6 +155,12 @@ export const projects = [
     img: "/portfolio.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/aceternityui.png", "/npm.svg"],
     link: "https://www.amberforrester.io",
+    screenshots: [
+      "/screenshots/portfolio_1.png",
+      "/screenshots/portfolio_2.png",
+      "/screenshots/portfolio_3.png",
+      "/screenshots/portfolio_4.png",
+    ],
   },
 ];
 
