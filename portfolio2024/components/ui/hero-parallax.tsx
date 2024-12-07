@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import {
   motion,
   useScroll,
@@ -20,6 +20,9 @@ export const HeroParallax = ({
     iconLists: string[];
   };
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState<string |null>(null);  
+
   const firstRow = selectedProject.screenshots.slice(0, 4);
 
   const ref = React.useRef(null);
@@ -55,6 +58,16 @@ export const HeroParallax = ({
     springConfig
   );
 
+  const openModal = (imageSrc: string) => {
+    setModalImage(imageSrc);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalImage(null);
+  };
+
   return (
     <div
       ref={ref}
@@ -80,10 +93,34 @@ export const HeroParallax = ({
                 key={index}
                 src={screenshot}
                 translate={translateX}
+                onClick={() => openModal(screenshot)}
                 />
             ))}
             </motion.div>
         </motion.div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+            <div className="relative w-full max-w-3xl h-auto p-4">
+            <button
+                onClick={closeModal}
+                className="absolute top-2 right-4 text-white text-2xl"
+            >
+                &times;
+            </button>
+            
+                <Image
+                src={modalImage!}
+                alt="Full-size screenshot"
+                layout="responsive"
+                width={800}
+                height={600}
+                className="rounded-lg"
+                />
+            </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -133,9 +170,11 @@ export const Header = ({
 export const ImageCard = ({
   src,
   translate,
+  onClick,
 }: {
     src: string;
     translate: MotionValue<number>;
+    onClick: () => void;
 }) => {
   return (
     <motion.div
@@ -146,6 +185,7 @@ export const ImageCard = ({
         y: -20,
       }}
       className="group/product h-64 w-[30rem] sm:h-80 sm:w-[25rem] md:h-96 md:w-[30rem] lg:h-[28rem] lg:w-[36rem] relative flex-shrink-0 overflow-hidden bg-gray-900 rounded-lg"
+      onClick={onClick}
     >
         <Image
           src={src}
@@ -153,6 +193,7 @@ export const ImageCard = ({
           layout="fill"
           objectFit="cover"
           className="rounded-lg"
+          loading="lazy"
         />
     </motion.div>
   );
