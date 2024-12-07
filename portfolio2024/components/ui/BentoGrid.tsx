@@ -48,8 +48,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const frontEnd = ["Vercel", "Next.js", "React", "JavaScript", "TypeScript", "Vite", "UIKit Installations", "Shadcn/ui", "Aceternity UI", "Figma", "TailwindCSS", "Lexical", "LiveBlocks", "GraphQL", "HTML", "CSS", "jQuery", "Zustand", "Tanstack Query", "Flowbite", "hygraph", "Redux", "SWC", "Webpack", "Babel"];
-  const backEnd = ["MongoDB", "Express", "Node", "AWS", "Python", "Django", "Flask", "Azure", "GCS", "Appwrite", "Firebase", "AstraDB", "Langflow", "Streamlit", "Mongoose", "Generative AI", "PostgreSQL", "SQL", "MySQL", "TSQL", "JWT's", "API's", "Webservers", "Clerk", "UploadThing", "Google OAuth", "Ollama", "OpenAI", "DRF", "Supabase", "pgAdmin"];
+  const frontEnd = ["Vercel", "Next.js", "React", "JavaScript", "TypeScript", "Vite", "UIKit Installations", "Shadcn/ui", "Aceternity UI", "Figma", "TailwindCSS", "Lexical", "LiveBlocks", "GraphQL(querying)", "HTML", "CSS", "jQuery", "Zustand", "Tanstack Query", "Flowbite", "hygraph", "Redux", "SWC", "Webpack", "Babel", "Saas(UI/UX)"];
+  const backEnd = ["MongoDB", "Express", "Node", "AWS", "Python", "Django", "Flask", "Azure", "GCS", "Appwrite", "Firebase", "AstraDB", "Langflow", "Streamlit", "Mongoose", "Generative AI", "GraphQL(API creation)", "PostgreSQL", "SQL", "MySQL", "TSQL", "JWTs", "APIs", "Webservers", "Clerk", "UploadThing", "Google OAuth", "Ollama", "OpenAI", "DRF", "Supabase", "pgAdmin", "SaaS(APIs/logic)", "Postman"];
 
   const [copied, setCopied] = useState(false);
 
