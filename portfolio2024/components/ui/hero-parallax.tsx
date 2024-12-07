@@ -21,8 +21,6 @@ export const HeroParallax = ({
   };
 }) => {
   const firstRow = selectedProject.screenshots.slice(0, 4);
-  const secondRow = selectedProject.screenshots.slice(4, 8);
-  const thirdRow = selectedProject.screenshots.slice(8, 12);
 
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
@@ -60,50 +58,32 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header 
         title={selectedProject.title}
         description={selectedProject.description}
         iconLists={selectedProject.iconLists}
       />
-      <motion.div
-        style={{
-          rotateX,
-          rotateZ,
-          translateY,
-          opacity,
-        }}
-        className=""
-      >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map((screenshot, index) => (
-            <ImageCard
-              key={index}
-              src={screenshot}
-              translate={translateX}
-            />
-          ))}
+        <motion.div
+            style={{
+            rotateX,
+            rotateZ,
+            translateY,
+            opacity,
+            }}
+            className="">
+
+            <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+            {firstRow.map((screenshot, index) => (
+                <ImageCard
+                key={index}
+                src={screenshot}
+                translate={translateX}
+                />
+            ))}
+            </motion.div>
         </motion.div>
-        <motion.div className="flex flex-row mb-20 space-x-20">
-          {secondRow.map((screenshot, index) => (
-            <ImageCard
-              key={index}
-              src={screenshot}
-              translate={translateXReverse}
-            />
-          ))}
-        </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((screenshot, index) => (
-            <ImageCard
-              key={index}
-              src={screenshot}
-              translate={translateX}
-            />
-          ))}
-        </motion.div>
-      </motion.div>
     </div>
   );
 };
@@ -165,14 +145,14 @@ export const ImageCard = ({
       whileHover={{
         y: -20,
       }}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product h-64 w-[30rem] sm:h-80 sm:w-[25rem] md:h-96 md:w-[30rem] lg:h-[28rem] lg:w-[36rem] relative flex-shrink-0 overflow-hidden bg-gray-900 rounded-lg"
     >
         <Image
           src={src}
           alt="Project Screenshot"
-          height="600"
-          width="600"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-lg"
         />
     </motion.div>
   );

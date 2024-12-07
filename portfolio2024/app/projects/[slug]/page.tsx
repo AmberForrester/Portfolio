@@ -44,24 +44,7 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
       {/* HeroParallax with the customized project data */}
       <HeroParallax selectedProject={selectedProject} />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <h1>Features</h1>
 
       <BackButton />
     
