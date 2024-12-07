@@ -31,7 +31,7 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
 
   return (
     <div className="p-8">
-
+      <BackButton />
       {/* <a
         href={project.link}
         target="_blank"
@@ -46,7 +46,7 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
 
       <h1>Features</h1>
 
-      <BackButton />
+      
     
       {/* FOOTER */}
       <div 

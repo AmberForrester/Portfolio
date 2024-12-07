@@ -102,10 +102,11 @@ export const HeroParallax = ({
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+            
             <div className="relative w-full max-w-3xl h-auto p-4">
             <button
                 onClick={closeModal}
-                className="absolute top-2 right-4 text-white text-2xl"
+                className="absolute top-2 right-4 text-purple text-2xl"
             >
                 &times;
             </button>
@@ -190,9 +191,9 @@ export const ImageCard = ({
         <Image
           src={src}
           alt="Project Screenshot"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+          height={600}
+          width={600}          
+          className="w-full h-full object-cover rounded-lg"
           loading="lazy"
         />
     </motion.div>
