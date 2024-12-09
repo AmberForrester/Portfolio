@@ -17,7 +17,7 @@ export default function BackButton() {
     <MagicButton
       title="Back To Projects"
       icon=""
-      position="right"
+      position=""
       handleClick={onClick}
     />
     </div>

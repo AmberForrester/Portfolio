@@ -28,30 +28,20 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
     description: project.des,
     screenshots: project.screenshots,
     iconLists: project.iconLists,
+    link: project.link,
   };
 
   return (
     <div className="p-8">
       <BackButton />
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-8 inline-block px-6 py-2 text-white bg-purple-600 rounded-md"
-      >
-        Visit Project
-      </a>
 
       {/* HeroParallax with the customized project data */}
       <HeroParallax selectedProject={selectedProject} />
 
       <h1>Features</h1>
 
-
-      
-    
+   
       <Footer />
-
     </div>
   );
 }

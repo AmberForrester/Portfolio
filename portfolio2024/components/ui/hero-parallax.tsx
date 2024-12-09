@@ -18,6 +18,7 @@ export const HeroParallax = ({
     description: string;
     screenshots: string[];
     iconLists: string[];
+    link: string;
   };
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -77,6 +78,7 @@ export const HeroParallax = ({
         title={selectedProject.title}
         description={selectedProject.description}
         iconLists={selectedProject.iconLists}
+        link={selectedProject.link}
       />
         <motion.div
             style={{
@@ -127,46 +129,61 @@ export const HeroParallax = ({
 };
 
 export const Header = ({
-    title,
-    description,
-    iconLists,
+  title,
+  description,
+  iconLists,
+  link,
 }: {
-    title: string;
-    description: string;
-    iconLists: string[];
+  title: string;
+  description: string;
+  iconLists: string[];
+  link: string;
 }) => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        {title}
-      </h1>
+      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">{title}</h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
         {description}
       </p>
 
-      {/* TECH STACK ICONS */}
+      {/* Container for Icons and Button */}
       <div className="flex items-center mt-8">
-        {iconLists.map((icon, index) => (
-            <div 
-                key={icon}
-                className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center mr-4"
-                style={{
-                    transform: `translateX(-${5 * index * 5}px)`,
-                  }}
+        {/* Tech Stack Icons */}
+        <div className="flex relative">
+          {iconLists.map((icon, index) => (
+            <div
+              key={icon}
+              className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+              style={{
+                transform: `translateX(-${5 * index}px)`, // Overlap icons
+                zIndex: iconLists.length - index, // Ensure correct stacking
+              }}
             >
-                <Image 
-                    src={icon}
-                    alt={`Tech stack icon ${index + 1}`}
-                    className="p-2"
-                    height={40}
-                    width={40}
-                />
+              <Image
+                src={icon}
+                alt={`Tech stack icon ${index + 1}`}
+                className="p-2"
+                height={40}
+                width={40}
+              />
             </div>
-        ))}
+          ))}
+        </div>
+
+        {/* Visit Project Button */}
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-10 px-3 py-2 text-purple md:text-xl"
+        >
+          View the Live Demo
+        </a>
       </div>
     </div>
   );
 };
+
 
 export const ImageCard = ({
   src,
