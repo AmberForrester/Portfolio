@@ -405,42 +405,46 @@ export const projects = [
     ],
     features: [
       {
-        title: "",
-        description: ""
+        title: "Dynamic Hero Section",
+        description: "Designed an engaging introduction with spotlight effects and a dynamic background, leveraging Framer Motion and Tailwind CSS to create visually stunning animations."
       },
       {
-        title: "",
-        description: ""
+        title: "Bento Grid Layout",
+        description: "Built a modern, modular layout for personal details using advanced CSS techniques and Tailwind utilities, delivering a sleek and adaptable design."
       },
       {
-        title: "",
-        description: ""
+        title: "Interactive 3D Elements",
+        description: "Integrated immersive 3D components, including a GitHub-style globe, utilizing @react-three/fiber and three-globe for enhanced interactivity."
       },
       {
-        title: "",
-        description: ""
+        title: "Next.js Dynamic Routing",
+        description: "Implemented a flexible file-based routing system in Next.js, dynamically rendering project pages and portfolio sections for seamless scalability and navigation."
       },
       {
-        title: "",
-        description: ""
+        title: "Canvas Effects",
+        description: "Engineered visually striking HTML5 canvas effects in my approach section using three.js and CSS animations to captivate viewers."
       },
       {
-        title: "",
-        description: ""
+        title: "Aceternity UI Integration",
+        description: "Incorporated Aceternity UI components for consistent, elegant styling and reusable design elements across the portfolio."
+      },
+      {
+        title: "Optimized Code Architecture",
+        description: "Developed a scalable, modular codebase with TypeScript and utilities like clsx and tailwind-merge for maintainable and efficient styling."
       },
     ],
     pipeline: [
       {
-        title: "",
-        description: ""
+        title: "Performance Optimization",
+        description: "Implement advanced performance improvements focused on Core Web Vitals metrics such as Largest Contentful Paint (LCP), Cumulative Layout Shift (CLS), and First Input Delay (FID)."
       },
       {
-        title: "",
-        description: ""
+        title: "Interactive Case Studies",
+        description: "Add in-depth project case studies with interactive elements such as demo videos, technical challenges, and solutions."
       },
       {
-        title: "",
-        description: ""
+        title: "Dynamic Theme Customization",
+        description: "Incorporate a theme customization feature allowing visitors to toggle between light, dark, and custom themes, showcasing design adaptability while improving user experience."
       },
     ],
   },
