@@ -80,6 +80,7 @@ export const projects = [
     img: "/zeniverse.png",
     iconLists: ["/re.svg", "/vite.svg", "/tail.svg", "/gsap.svg", "/js.svg", "/clippy.png"],
     link: "https://zeniverse.vercel.app",
+    source: "https://github.com/AmberForrester/zeniverse",
     screenshots: [
       "/screenshots/zeniverse_1.png",
       "/screenshots/zeniverse_2.png",
@@ -87,10 +88,44 @@ export const projects = [
       "/screenshots/zeniverse_4.png",
     ],
     features: [
-      "abcdefh",
-      "ijklmnop",
-      "qrstuv",
-      "wxyz"
+      {
+        title: "Scroll Activated Visual Effects",
+        description: "Showcasing mastery in GSAP, creating dynamic, scroll-triggered animations that captivate users and enhance storytelling through interactive visuals."
+      },
+      {
+        title: "Artistic Geometric Transitions",
+        description: "Harnessing the power of CSS clip-path to craft intricate geometric animations, merging creativity with technical precision."
+      },
+      {
+        title: "Advanced Hover Interactions",
+        description: "Leveraging React.js to deliver cutting-edge 3D hover effects, demonstrating expertise in creating responsive, interactive elements that elevate user engagement."
+      },
+      {
+        title: "Immersive Media Integration",
+        description: "Seamlessly blending video elements into the design for a cinematic user experience, highlighting proficiency in modern front-end development."
+      },
+      {
+        title: "Polished UI/UX Design",
+        description: "Expertly utilizing Tailwind CSS to create visually stunning, user-friendly interfaces with buttery smooth interactions and pixel perfect alignment."
+      },
+      {
+        title: "Device-Agnostic Responsiveness",
+        description: "Ensuring exceptional usability across all devices, showcasing skills in responsive web design for optimal performance on desktops, tablets, and smartphones."
+      },
+    ],
+    pipeline: [
+      {
+        title: "Player Demos",
+        description: "Develop a showcase section for dynamic, real-time or recorded gameplay demos, highlighting how users interact with the platform's features in creative and engaging ways."
+      },
+      {
+        title: "Community Driven Reviews",
+        description: "Incorporate a review system where members of the Zeniverse community can share authentic feedback, fostering trust and engagement among users."
+      },
+      {
+        title: "Insightful Blogs",
+        description: "Launch a dedicated blog section to share development updates, community stories, and thought leadership on bridging the gap between digital and physical worlds."
+      },
     ],
   },
   {
@@ -101,11 +136,57 @@ export const projects = [
     img: "/evently.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/mongodb.svg", "/stripe.svg"],
     link: "https://evently-pink-sigma.vercel.app",
+    source: "https://github.com/AmberForrester/evently",
     screenshots: [
       "/screenshots/evently_1.png",
       "/screenshots/evently_2.png",
       "/screenshots/evently_3.png",
       "/screenshots/evently_4.png",
+    ],
+    features: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: "",
+        subfeatures: [
+          "",
+          "",
+          "",
+        ]
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+    ],
+    pipeline: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
     ],
   },
   {
@@ -116,11 +197,52 @@ export const projects = [
     img: "/storeit.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/figma.svg", "/appwrite.png", "/shadcn.png"],
     link: "https://www.storeit.amberforrester.io",
+    source: "https://github.com/AmberForrester/store_it",
     screenshots: [
       "/screenshots/storeit_1.png",
       "/screenshots/storeit_2.png",
       "/screenshots/storeit_3.png",
       "/screenshots/storeit_4.png",
+    ],
+    features: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+    ],
+    pipeline: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
     ],
   },
   {
@@ -131,11 +253,52 @@ export const projects = [
     img: "/livedocs.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/nodejs.svg", "/re.svg", "/clerk.png", "/liveblocks.png"],
     link: "https://livedocs-livid.vercel.app",
+    source: "https://github.com/AmberForrester/live_docs",
     screenshots: [
       "/screenshots/livedocs_1.png",
       "/screenshots/livedocs_2.png",
       "/screenshots/livedocs_3.png",
       "/screenshots/livedocs_4.png",
+    ],
+    features: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+    ],
+    pipeline: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
     ],
   },
   {
@@ -146,11 +309,52 @@ export const projects = [
     img: "/quickgist.png",
     iconLists: ["/openai.png", "/tail.svg", "/js.svg", "/vite.svg", "/redux.svg", "/rapidapi.png", "/re.svg"],
     link: "https://quickgist.amberforrester.io",
+    source: "https://github.com/AmberForrester/QuickGist",
     screenshots: [
       "/screenshots/quickgist_1.png",
       "/screenshots/quickgist_2.png",
       "/screenshots/quickgist_3.png",
       "/screenshots/quickgist_4.png",
+    ],
+    features: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+    ],
+    pipeline: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
     ],
   },
   {
@@ -161,11 +365,52 @@ export const projects = [
     img: "/portfolio.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/aceternityui.png", "/npm.svg"],
     link: "https://www.amberforrester.io",
+    source: "https://github.com/AmberForrester/Portfolio",
     screenshots: [
       "/screenshots/portfolio_1.png",
       "/screenshots/portfolio_2.png",
       "/screenshots/portfolio_3.png",
       "/screenshots/portfolio_4.png",
+    ],
+    features: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+    ],
+    pipeline: [
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
+      {
+        title: "",
+        description: ""
+      },
     ],
   },
 ];

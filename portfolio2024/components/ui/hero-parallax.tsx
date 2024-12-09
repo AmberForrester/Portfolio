@@ -9,6 +9,7 @@ import {
   MotionValue,
 } from "framer-motion";
 import Image from "next/image";
+import { IoLogoGithub } from "react-icons/io5";
 
 export const HeroParallax = ({
     selectedProject,
@@ -19,6 +20,7 @@ export const HeroParallax = ({
     screenshots: string[];
     iconLists: string[];
     link: string;
+    source: string;
   };
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -79,6 +81,7 @@ export const HeroParallax = ({
         description={selectedProject.description}
         iconLists={selectedProject.iconLists}
         link={selectedProject.link}
+        source={selectedProject.source}
       />
         <motion.div
             style={{
@@ -133,11 +136,13 @@ export const Header = ({
   description,
   iconLists,
   link,
+  source,
 }: {
   title: string;
   description: string;
   iconLists: string[];
   link: string;
+  source: string;
 }) => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
@@ -155,8 +160,8 @@ export const Header = ({
               key={icon}
               className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
               style={{
-                transform: `translateX(-${5 * index}px)`, // Overlap icons
-                zIndex: iconLists.length - index, // Ensure correct stacking
+                transform: `translateX(-${5 * index}px)`,
+                zIndex: iconLists.length - index,
               }}
             >
               <Image
@@ -175,9 +180,19 @@ export const Header = ({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-10 px-3 py-2 text-purple md:text-xl"
+          className="ml-5 px-3 py-2 text-purple md:text-xl"
         >
           View the Live Demo
+        </a>
+
+        {/* View Source Code Button */}
+        <a
+          href={source}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-6 px-3 py-2 text-purple md:text-xl flex items-center"
+        >
+          Source Code <IoLogoGithub className="ml-2"/>
         </a>
       </div>
     </div>
