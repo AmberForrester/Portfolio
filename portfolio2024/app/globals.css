@@ -111,3 +111,19 @@
     @apply bg-background text-foreground;
     }
 }
+
+  @media (max-width: 640px) {
+    .project-features-mobile {
+      margin-top: -3650px !important;
+      padding-bottom: 5vh !important;
+    }
+
+    .project-features-text {
+      margin-top: 0.5rem !important;
+    }
+
+    .project-container-mobile {
+      padding-bottom: 0 !important;
+      margin-bottom: 0 !important;
+    }
+}
