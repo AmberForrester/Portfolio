@@ -145,47 +145,60 @@ export const projects = [
     ],
     features: [
       {
-        title: "",
-        description: ""
+        title: "Robust User Authentication",
+        description: "Leveraging Clerk to implement secure, scalable user authentication and management with seamless account creation, login, and session handling."
       },
       {
-        title: "",
-        description: "",
+        title: "Dynamic Event Lifecycle Management",
+        description: "Building end-to-end features for events, including -",
         subfeatures: [
-          "",
-          "",
-          "",
+          "Creation: Crafting user-friendly event creation forms with React Hook Form and Zod validation.",
+          "Detail Views: Optimizing event detail pages with advanced database queries using Mongoose and Next.js routing.",
+          "Edit Existing Events: Enable real-time updates to event information while preserving data accuracy through validation and user feedback.",
+          "Remove Events: Implement straightforward yet secure deletion workflows, empowering users to manage their events effectively."
         ]
       },
       {
-        title: "",
-        description: ""
+        title: "Intelligent Event Recommendations",
+        description: "Designing a recommendation engine to enhance user engagement by showcasing related events on profile and event detail pages."
       },
       {
-        title: "",
-        description: ""
+        title: "Personalized User Dashboards",
+        description: "Creating visually compelling dashboards with Tailwind CSS, displaying user-specific events for intuitive organization."
       },
       {
-        title: "",
-        description: ""
+        title: "Advanced Search and Filters",
+        description: "Implementing efficient search and filtering functionality using server-side rendering and client-side interactivity for precise results."
       },
       {
-        title: "",
-        description: ""
+        title: "Dynamic Event Categories",
+        description: "Designing a flexible category management system to accommodate evolving event types with ease."
+      },
+      {
+        title: "Integrated Payment System",
+        description: "Developing secure and seamless payment processing powered by Stripe, ensuring user-friendly checkout experiences."
+      },
+      {
+        title: "Comprehensive Order Management",
+        description: "Building an intuitive order tracking system, including searchable transaction histories for both users and administrators."
+      },
+      {
+        title: "Scalable Architecture",
+        description: "Architecting a modular, reusable Next.js codebase for enhanced scalability, maintainability, and team collaboration."
       },
     ],
     pipeline: [
       {
-        title: "",
-        description: ""
+        title: "Global Currency Support",
+        description: "Implement a multi-currency payment system to streamline transactions for users worldwide, leveraging real-time currency conversion APIs for accuracy."
       },
       {
-        title: "",
-        description: ""
+        title: "Hybrid Event Date Management",
+        description: "Introduce flexible scheduling options to support events with separate dates for in person and remote attendees, ensuring seamless coordination across formats."
       },
       {
-        title: "",
-        description: ""
+        title: "Time Zone Customization",
+        description: "Add intelligent time zone support, allowing organizers and attendees to view event schedules in their local time zones, utilizing libraries like Luxon for precise date-time handling."
       },
     ],
   },
@@ -206,42 +219,50 @@ export const projects = [
     ],
     features: [
       {
-        title: "",
-        description: ""
+        title: "Robust Authentication System",
+        description: "Implemented secure and seamless user authentication using Appwrite, including OTP verification for enhanced security."
       },
       {
-        title: "",
-        description: ""
+        title: "Efficient File Uploading",
+        description: "Designed a smooth file upload process for diverse file types, ensuring optimal performance and secure storage of documents, images, videos, and more."
       },
       {
-        title: "",
-        description: ""
+        title: "Advanced File Management",
+        description: "Developed a comprehensive file management system featuring real-time organization, categorization, and summary storage for an effortless user experience."
       },
       {
-        title: "",
-        description: ""
+        title: "Streamlined File Sharing",
+        description: "Enabled hassle-free file sharing capabilities, fostering collaboration with secure access controls."
       },
       {
-        title: "",
-        description: ""
+        title: "Insightful Dashboard",
+        description: "Built a dynamic dashboard that provides users with a visual overview of their storage usage, recent uploads, and categorized file summaries."
       },
       {
-        title: "",
-        description: ""
+        title: "Powerful Global Search",
+        description: "Integrated a robust global search feature for quickly locating files, shared content, and resources across the platform."
+      },
+      {
+        title: "Customizable Sorting Options",
+        description: "Delivered flexible file sorting by name, size, or date to improve efficiency and user productivity."
+      },
+      {
+        title: "Modern UI/UX Design",
+        description: "Leveraged Tailwind CSS and shadcn/ui to craft a sleek, responsive, and intuitive interface that works flawlessly across all devices."
       },
     ],
     pipeline: [
       {
-        title: "",
-        description: ""
+        title: "Custom Avatars",
+        description: "Empower users to select or upload personalized avatars during sign-up and/or after completing their profiles, enhancing identity personalization."
       },
       {
-        title: "",
-        description: ""
+        title: "Enhanced File Management Rules",
+        description: "Ensure shared file integrity by restricting users from deleting files shared with them, while allowing full control over files they upload."
       },
       {
-        title: "",
-        description: ""
+        title: "Custom Folder Organization",
+        description: "Introduce customizable folder structures, enabling users to personalize their dashboards and streamline content organization for an intuitive experience."
       },
     ],
   },
@@ -262,42 +283,52 @@ export const projects = [
     ],
     features: [
       {
-        title: "",
-        description: ""
+        title: "Secure Authentication with Google",
+        description: "Implemented user-friendly, secure sign-in and sign-out processes using NextAuth, ensuring robust session management and data privacy."
       },
       {
-        title: "",
-        description: ""
+        title: "Real-Time Collaborative Editing",
+        description: "Engineered seamless, simultaneous document editing for multiple users with instant updates, leveraging Liveblocks for cutting-edge real-time synchronization."
       },
       {
-        title: "",
-        description: ""
+        title: "Comprehensive Document Management",
+        description: "Developed intuitive features for document lifecycle management -",
+        subfeatures: [
+          "Create New Documents: Enabled quick setup with auto-saving for uninterrupted productivity.",
+          "Delete Documents: Integrated secure deletion capabilities to maintain document control.",
+          "Advanced Sharing Options: Empowered users to share documents with customizable view and edit permissions via email or direct link.",
+          "Organized Document Listings: Designed clear navigation to access owned or shared documents efficiently."
+        ]
       },
       {
-        title: "",
-        description: ""
+        title: "In-Context Commenting",
+        description: "Facilitated threaded discussions through inline and general comments, enhancing collaboration and feedback workflows."
       },
       {
-        title: "",
-        description: ""
+        title: "Live Collaboration Indicators",
+        description: "Visualized team activity with live presence indicators, offering real-time insights into collaborators' actions within the editor."
       },
       {
-        title: "",
-        description: ""
+        title: "Smart Notifications System",
+        description: "Built a responsive notification system to inform users about document updates, comments, and collaborator activities, ensuring everyone stays aligned."
+      },
+      {
+        title: "Fully Responsive Design",
+        description: "Created a fully responsive, adaptive interface with Tailwind CSS, enabling seamless usage across all devices, from desktop to mobile."
       },
     ],
     pipeline: [
       {
-        title: "",
-        description: ""
+        title: "Version History and Rollback",
+        description: "Implement a robust version control system to track changes made by collaborators in real-time. Allow users to view edit histories, compare document versions, and roll back to previous iterations seamlessly."
       },
       {
-        title: "",
-        description: ""
+        title: "Integrated Voice and Video Collaboration",
+        description: "Enhance collaboration by embedding voice and video calling directly into the platform. This enables teams to discuss changes and brainstorm ideas without leaving the document interface, fostering real-time communication."
       },
       {
-        title: "",
-        description: ""
+        title: "Offline Mode with Sync",
+        description: "Introduce an offline editing mode to ensure uninterrupted productivity. Changes made offline will sync automatically to the cloud once the user regains internet connectivity, leveraging WebRTC or IndexedDB for local storage."
       },
     ],
   },
@@ -318,42 +349,42 @@ export const projects = [
     ],
     features: [
       {
-        title: "",
-        description: ""
+        title: "Modern and Intuitive UI",
+        description: "Designed a sleek, user-friendly interface with Tailwind CSS, ensuring seamless navigation and interaction for all users."
       },
       {
-        title: "",
-        description: ""
+        title: "AI-Powered Article Summarization",
+        description: "Leveraged OpenAI's GPT-4 to generate concise, insightful summaries from lengthy articles, enabling quick and efficient content consumption."
       },
       {
-        title: "",
-        description: ""
+        title: "Local Storage Integration",
+        description: "Implemented automatic saving of summaries to local storage, allowing users to effortlessly manage and revisit their reading history."
       },
       {
-        title: "",
-        description: ""
+        title: "Effortless Clipboard Functionality",
+        description: "Enabled quick copying of generated summaries to the clipboard for easy sharing and storage."
       },
       {
-        title: "",
-        description: ""
+        title: "Customizable History Management",
+        description: "Added an intuitive delete feature, allowing users to keep their summary history organized with a single click."
       },
       {
-        title: "",
-        description: ""
+        title: "Optimized API Performance",
+        description: "Utilized Redux Toolkit Query for efficient, conditional API requests, enhancing app performance and reducing unnecessary data fetching."
       },
     ],
     pipeline: [
       {
-        title: "",
-        description: ""
+        title: "Customizable Summary Lengths",
+        description: "Introduce options for users to tailor summary lengths based on their preferences, such as short bullet points, medium-length summaries, or detailed explanations, offering flexibility to suit varying needs."
       },
       {
-        title: "",
-        description: ""
+        title: "Multi-Language Support",
+        description: "Expand the platform’s accessibility by enabling summaries in multiple languages using OpenAI’s multilingual capabilities. This feature would allow users worldwide to process and understand content in their native languages."
       },
       {
-        title: "",
-        description: ""
+        title: "Context-Aware Summarization Modes",
+        description: "Develop advanced summarization modes tailored for specific contexts, such as educational overviews, technical briefs, or business highlights, providing domain-specific insights while preserving key details."
       },
     ],
   },
