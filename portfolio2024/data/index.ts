@@ -86,6 +86,12 @@ export const projects = [
       "/screenshots/zeniverse_3.png",
       "/screenshots/zeniverse_4.png",
     ],
+    features: [
+      "abcdefh",
+      "ijklmnop",
+      "qrstuv",
+      "wxyz"
+    ],
   },
   {
     id: 2,
