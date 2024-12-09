@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   motion,
   useScroll,
@@ -23,6 +23,19 @@ export const HeroParallax = ({
     source: string;
   };
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState<string |null>(null);  
 
@@ -83,6 +96,19 @@ export const HeroParallax = ({
         link={selectedProject.link}
         source={selectedProject.source}
       />
+
+      {isMobile ? (
+        <div className="flex flex-col gap-4 items-center mt-10">
+          {selectedProject.screenshots.map((screenshot, index) => (
+            <ImageCard 
+              key={index}
+              src={screenshot}
+              translate={null}
+              onClick={() => openModal(screenshot)}
+            />
+          ))}
+        </div>
+      ) : (
         <motion.div
             style={{
             rotateX,
@@ -102,7 +128,8 @@ export const HeroParallax = ({
                 />
             ))}
             </motion.div>
-        </motion.div>
+        </motion.div>        
+      )}
 
       {/* Modal */}
       {isModalOpen && (
@@ -206,18 +233,18 @@ export const ImageCard = ({
   onClick,
 }: {
     src: string;
-    translate: MotionValue<number>;
+    translate: MotionValue<number> | null;
     onClick: () => void;
 }) => {
   return (
     <motion.div
       style={{
-        x: translate,
+        x: translate || 0,
       }}
       whileHover={{
         y: -20,
       }}
-      className="group/product h-64 w-[30rem] sm:h-80 sm:w-[25rem] md:h-96 md:w-[30rem] lg:h-[28rem] lg:w-[36rem] relative flex-shrink-0 overflow-hidden bg-gray-900 rounded-lg"
+      className="group/product h-64 w-[30rem] sm:h-64 md:h-96 md:w-[30rem] lg:h-[28rem] lg:w-[36rem] relative flex-shrink-0 overflow-hidden bg-gray-900 rounded-lg"
       onClick={onClick}
     >
         <Image
