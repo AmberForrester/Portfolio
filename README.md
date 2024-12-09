@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="portfolio_1.png" alt="Portfolio homepage">
+<img src="./public/screenshots/portfolio_1.png" alt="Portfolio homepage">
 
 <p align="center">Unveil your journey of a Developer who turns complex problems into elegant solutions. This portfolio is more than just a showcase—it"s a testament to the power of passion, precision, and relentless curiosity.
 <br />
@@ -44,6 +44,13 @@
 
 
 ## Features
+- **Dynamic Hero Section:** Designed an engaging introduction with spotlight effects and a dynamic background, leveraging Framer Motion and Tailwind CSS to create visually stunning animations.
+- **Bento Grid Layout:** Built a modern, modular layout for personal details using advanced CSS techniques and Tailwind utilities, delivering a sleek and adaptable design.
+- **Interactive 3D Elements:** Integrated immersive 3D components, including a GitHub-style globe, utilizing @react-three/fiber and three-globe for enhanced interactivity.
+- **Next.js Dynamic Routing:** Implemented a flexible file-based routing system in Next.js, dynamically rendering project pages and portfolio sections for seamless scalability and navigation."
+- **Canvas Effects:** Engineered visually striking HTML5 canvas effects in my approach section using three.js and CSS animations to captivate viewers.
+- **Aceternity UI Integration:** Incorporated Aceternity UI components for consistent, elegant styling and reusable design elements across the portfolio.
+- **Optimized Code Architecture:** Developed a scalable, modular codebase with TypeScript and utilities like clsx and tailwind-merge for maintainable and efficient styling.
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
@@ -51,7 +58,7 @@
 
 ## Project Structure
 
-<img src="project_structure.png" alt="Picture of the project structure in Visual Studio Code">
+<img src="./public/structure.png" alt="Picture of the project structure in Visual Studio Code">
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
