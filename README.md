@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="./public/screenshots/portfolio_1.png" alt="Portfolio homepage">
+<img src="portfolio2024/public/screenshots/portfolio_1.png" alt="Portfolio homepage">
 
 <p align="center">Unveil your journey of a Developer who turns complex problems into elegant solutions. This portfolio is more than just a showcase—it"s a testament to the power of passion, precision, and relentless curiosity.
 <br />
@@ -58,7 +58,7 @@
 
 ## Project Structure
 
-<img src="./public/structure.png" alt="Picture of the project structure in Visual Studio Code">
+<img src="portfolio2024/public/structure.png" alt="Picture of the project structure in Visual Studio Code">
 
 <p align="right">(<a href="#readme-top">top of page</a>)</p>
 
