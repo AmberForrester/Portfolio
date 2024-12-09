@@ -33,13 +33,13 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
   };
 
   return (
-    <div className="p-8 project-container-mobile">
+    <div className="p-8">
       <BackButton />
 
       {/* HeroParallax with the customized project data */}
       <HeroParallax selectedProject={selectedProject} />
 
-      <section className="mt-[-120vh] px-10 pb-[30vh] project-features-mobile">
+      <section className="mt-[-120vh] px-10 pb-[30vh]">
         <div className="max-w-7xl mx-auto">
           <h1 className="!text-left heading">
             Project <span className="block sm:inline text-purple">Features</span>
