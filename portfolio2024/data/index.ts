@@ -390,7 +390,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Modern Next.js Portfolio: Personal Milestone",
+    title: "Next.js Portfolio: Personal Milestone",
     slug: slugify("Modern Next.js Portfolio: Personal Milestone", { lower: true, remove: /[:]/g }),
     des: "Showcases a beautifully crafted and highly functional portfolio, effectively presenting skills and projects while marking a milestone of dedication and growth in web development.",
     img: "/portfolio.png",
