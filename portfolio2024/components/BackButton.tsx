@@ -1,7 +1,6 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { RiArrowGoBackFill } from "react-icons/ri";
 import MagicButton from "./MagicButton";
 
 export default function BackButton() {
@@ -17,7 +16,7 @@ export default function BackButton() {
     >
     <MagicButton
       title="Back To Projects"
-      icon={<RiArrowGoBackFill />}
+      icon=""
       position="right"
       handleClick={onClick}
     />

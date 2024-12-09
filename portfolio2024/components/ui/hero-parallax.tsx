@@ -103,10 +103,10 @@ export const HeroParallax = ({
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
             
-            <div className="relative w-full max-w-3xl h-auto p-4">
+            <div className="relative w-full max-w-5xl h-auto p-4 flex justify-center items-center">
             <button
                 onClick={closeModal}
-                className="absolute top-2 right-4 text-purple text-2xl"
+                className="absolute top-2 right-4 text-purple text-2xl font-semibold"
             >
                 &times;
             </button>
@@ -115,8 +115,8 @@ export const HeroParallax = ({
                 src={modalImage!}
                 alt="Full-size screenshot"
                 layout="responsive"
-                width={800}
-                height={600}
+                width={1200}
+                height={1200}
                 className="rounded-lg"
                 />
             </div>
