@@ -87,7 +87,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[200vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header 
         title={selectedProject.title}
@@ -118,7 +118,7 @@ export const HeroParallax = ({
             }}
             className="">
 
-            <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+            <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-2">
             {firstRow.map((screenshot, index) => (
                 <ImageCard
                 key={index}
