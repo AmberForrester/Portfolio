@@ -395,7 +395,7 @@ export const projects = [
     des: "Showcases a beautifully crafted and highly functional portfolio, effectively presenting skills and projects while marking a milestone of dedication and growth in web development.",
     img: "/portfolio.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/aceternityui.png", "/npm.svg"],
-    link: "https://www.amberforrester.io",
+    link: "https://portfolio.amberforrester.io",
     source: "https://github.com/AmberForrester/Portfolio",
     screenshots: [
       "/screenshots/portfolio_1.png",
