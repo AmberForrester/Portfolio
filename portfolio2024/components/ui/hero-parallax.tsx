@@ -179,7 +179,7 @@ export const Header = ({
       </p>
 
       {/* Container for Icons and Button */}
-      <div className="flex items-center mt-8">
+      <div className="flex flex-col mt-8">
         {/* Tech Stack Icons */}
         <div className="flex relative">
           {iconLists.map((icon, index) => (
@@ -202,25 +202,27 @@ export const Header = ({
           ))}
         </div>
 
-        {/* Visit Project Button */}
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-5 px-3 py-2 text-purple md:text-xl"
-        >
-          View the Live Demo
-        </a>
+        <div className="mt-4 flex justify-start">
+          {/* Visit Project Button */}
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 py-2 text-purple md:text-xl"
+          >
+            View the Live Demo
+          </a>
 
-        {/* View Source Code Button */}
-        <a
-          href={source}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-6 px-3 py-2 text-purple md:text-xl flex items-center"
-        >
-          Source Code <IoLogoGithub className="ml-2"/>
-        </a>
+          {/* View Source Code Button */}
+          <a
+            href={source}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 py-2 text-purple md:text-xl flex items-center"
+          >
+            Source Code <IoLogoGithub className="ml-2"/>
+          </a>
+        </div>
       </div>
     </div>
   );
