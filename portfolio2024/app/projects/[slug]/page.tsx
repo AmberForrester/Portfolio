@@ -41,7 +41,7 @@ export default function ProjectDetails({ params }: { params: { slug: string } })
       {/* HeroParallax with the customized project data */}
       <HeroParallax selectedProject={selectedProject} />
 
-      <section className="px-10 pb-[30vh]">
+      <section className="mt-3 px-10 pb-[30vh]">
         <div className="max-w-7xl mx-auto">
           <h1 className="!text-left heading">
             Project <span className="block sm:inline text-purple">Features</span>
