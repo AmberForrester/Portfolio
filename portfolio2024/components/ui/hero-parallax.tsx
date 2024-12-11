@@ -138,7 +138,7 @@ export const HeroParallax = ({
             <div className="relative w-full max-w-5xl h-auto p-4 flex justify-center items-center">
             <button
                 onClick={closeModal}
-                className="absolute top-2 right-4 text-purple text-2xl font-semibold"
+                className="absolute top-2 right-5 text-purple text-2xl font-semibold"
             >
                 &times;
             </button>
