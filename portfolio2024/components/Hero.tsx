@@ -52,7 +52,7 @@ const Hero = () => {
                 <br/>
 
                 <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                    Hey! I&apos;m Amber, a retired Nurse who traded scrubs for Code. Now a Full Stack Software Engineer with a passion for crafting innovative solutions from the heart of Canada. <br/>
+                    Hey! I&apos;m Amber, a Full Stack Software Developer driven by a passion for creating innovative and impactful solutions. Based in the heart of Canada, I thrive on transforming ideas into seamless digital experiences. <br/>
                     <br/>
 
                     Ready to see how my diverse skills and experience can bring value to your team?

@@ -461,7 +461,7 @@ export const innovation_pipeline = [
   },
   {
     desc:
-      "StackSociety is a dedicated platform where full-stack software engineers come together to share invaluable insights, experiences, and resources. It’s a hub for developers to showcase their journeys, offer tips and tricks, and recommend books that have significantly shaped their growth. Built with Next.js, StackSociety is designed to foster collaboration, enhance the open-source community, and amplify the value of shared knowledge. It’s more than a blog—it’s a movement to support and uplift developers across the globe.",
+      "StackSociety is a dedicated platform where Full Stack Software Developer's come together to share invaluable insights, experiences, and resources. It’s a hub for developers to showcase their journeys, offer tips and tricks, and recommend books that have significantly shaped their growth. Built with Next.js, StackSociety is designed to foster collaboration, enhance the open-source community, and amplify the value of shared knowledge. It’s more than a blog—it’s a movement to support and uplift developers across the globe.",
     name: "Stack Society",
     title: "Empowering Developers Together",
     src: "/stacksociety.png",
@@ -480,7 +480,7 @@ export const innovation_pipeline = [
 export const workExperience = [
   {
     id: 1,
-    title: "Innovation Driven Full Stack Software Engineer",
+    title: "Innovation Driven Full Stack Software Developer",
     desc: "Pioneered full stack applications, balancing both front-end and back-end responsibilities.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
