@@ -455,7 +455,7 @@ export const innovation_pipeline = [
     desc:
       "@Vibe is an innovative internal social media platform designed to enhance productivity and foster collaboration within companies. Inspired by the simplicity of Threads, @Vibe serves as a centralized hub for team communication, department updates, and company-wide interactions all under one roof. Empowering employees to stay connected, informed, and engaged. It’s more than just a communication tool; it’s the heartbeat of a modern, connected workplace, redefining how teams share, grow, and succeed together.",
     name: "@Vibe",
-    title: "Redifining Workplace Collaboration",
+    title: "Redefining Workplace Collaboration",
     src: "/vibe.png",
     iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/tail.svg", "/mongodb.svg", "/figma.svg"],
   },
